@@ -1,14 +1,24 @@
-import { StyleSheet, Text, View } from 'react-native'
-import React from 'react'
+import {StyleSheet, Text, View} from 'react-native';
+import React from 'react';
+
+import {
+  SelectUser,
+  SignIn,
+  SplashScreen,
+  SignUp,
+  TextInput,
+  Label,
+  Button,
+} from './src';
 
 const App = () => {
   return (
     <View>
-      <Text>App</Text>
+      <SignUp />
     </View>
-  )
-}
+  );
+};
 
-export default App
+export default App;
 
-const styles = StyleSheet.create({})
+const styles = StyleSheet.create({});
