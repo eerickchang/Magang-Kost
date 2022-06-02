@@ -11,11 +11,18 @@ import {
   Label,
   Button,
 } from './src';
+import Gap from './src/components/Gap';
 
 const App = () => {
   return (
     <View>
-      <ViewDetails />
+      <Button title="Poco" />
+      <Gap height={15} />
+      <Button backgroundColor={'red'} />
+      <Gap height={15} />
+      <Button backgroundColor={'green'} />
+      <Gap height={15} />
+      <Button backgroundColor={'blue'} />
     </View>
   );
 };
