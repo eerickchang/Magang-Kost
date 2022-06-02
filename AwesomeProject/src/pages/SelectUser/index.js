@@ -1,4 +1,4 @@
-import {StyleSheet, Text, View} from 'react-native';
+import {StyleSheet, Text, View, TouchableOpacity} from 'react-native';
 import React from 'react';
 import {BorderSelectUser, Gap} from '../../components';
 import {SelectOwner, SelectPenyewa} from '../../assets';
@@ -12,13 +12,17 @@ const SelectUser = () => {
       <Gap height={17} />
       <Text style={styles.txt2}>Please select user</Text>
       <Gap height={16} />
-      <BorderSelectUser icons={<SelectPenyewa />} title="User" />
+      <TouchableOpacity activeOpacity={0.5}>
+        <BorderSelectUser icons={<SelectPenyewa />} title="User" />
+      </TouchableOpacity>
       <Gap height={24} />
-      <BorderSelectUser
-        icons={<SelectOwner />}
-        title="Owner"
-        backgroundColor="#8FFF00"
-      />
+      <TouchableOpacity activeOpacity={0.5}>
+        <BorderSelectUser
+          icons={<SelectOwner />}
+          title="Owner"
+          backgroundColor="#8FFF00"
+        />
+      </TouchableOpacity>
     </View>
   );
 };

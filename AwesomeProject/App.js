@@ -13,14 +13,14 @@ import {
   BorderSelectUser,
   HomeOwner,
   Footer,
+  LanjutanViewPenyewa,
+  TenantsProfile,
 } from './src';
 
 const App = () => {
   return (
     <View>
-      <SelectUser />
-      {/* <BorderSelectUser /> */}
-      {/* <ViewDetails /> */}
+      <TenantsProfile />
     </View>
   );
 };
