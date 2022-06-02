@@ -1,4 +1,7 @@
-import Logo from "./Logo.svg";
 import User from "./User.svg";
+import IconBackLeft from './IconBackLeft.svg';
 
-export {Logo, User}; 
+
+
+export {User, IconBackLeft}; 
+
