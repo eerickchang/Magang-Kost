@@ -10,19 +10,15 @@ import {
   TextInput,
   Label,
   Button,
+  BorderSelectUser,
 } from './src';
 import Gap from './src/components/Gap';
 
 const App = () => {
   return (
     <View>
-      <Button title="Poco" />
-      <Gap height={15} />
-      <Button backgroundColor={'red'} />
-      <Gap height={15} />
-      <Button backgroundColor={'green'} />
-      <Gap height={15} />
-      <Button backgroundColor={'blue'} />
+      <SelectUser />
+      {/* <BorderSelectUser /> */}
     </View>
   );
 };
