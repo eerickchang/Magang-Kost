@@ -11,14 +11,16 @@ import {
   Label,
   Button,
   BorderSelectUser,
+  HomeOwner,
+  Footer,
 } from './src';
-import Gap from './src/components/Gap';
 
 const App = () => {
   return (
     <View>
       <SelectUser />
       {/* <BorderSelectUser /> */}
+      {/* <ViewDetails /> */}
     </View>
   );
 };
