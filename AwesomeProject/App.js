@@ -6,6 +6,7 @@ import {
   SignIn,
   SplashScreen,
   SignUp,
+  ViewDetails,
   TextInput,
   Label,
   Button,
@@ -14,7 +15,7 @@ import {
 const App = () => {
   return (
     <View>
-      <SignUp />
+      <ViewDetails />
     </View>
   );
 };

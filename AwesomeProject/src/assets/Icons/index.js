@@ -1,4 +1,4 @@
-import logoKecil from './Logo.svg';
-import iconBackLeft from './IconBackLeft.svg';
+import LogoKecil from './Logo.svg';
+import IconBackLeft from './IconBackLeft.svg';
 
-export {logoKecil, iconBackLeft};
+export {LogoKecil, IconBackLeft};
