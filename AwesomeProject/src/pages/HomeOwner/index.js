@@ -3,7 +3,7 @@ import React from 'react';
 import { BtnAddView } from '../../components';
 import { User } from '../../assets';
 
-const Owner = () => {
+const HomeOwner = () => {
   return (
     <View style={styles.container}>
       <User/>
@@ -20,7 +20,7 @@ const Owner = () => {
   );
 };
 
-export default Owner;
+export default HomeOwner;
 
 const styles = StyleSheet.create({
   greeting: {

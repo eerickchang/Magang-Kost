@@ -11,15 +11,14 @@ import {
   Label,
   Button,
   HomeOwner,
-  BtnAddView,
-  User,
+  Footer,
 } from './src';
 
 const App = () => {
   return (
     <View>
-      
-      <HomeOwner />
+      {/* <ViewDetails /> */}
+      <Footer/>
     </View>
   );
 };
