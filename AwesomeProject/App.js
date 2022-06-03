@@ -1,4 +1,4 @@
-import {StyleSheet, Text, View} from 'react-native';
+import {StyleSheet, View} from 'react-native';
 import React from 'react';
 
 import {
@@ -18,14 +18,15 @@ import {
   LanjutanViewPenyewa,
   TenantsProfile,
   HeaderOwner,
+  ProfileUser,
+  
 } from './src';
 
 
 const App = () => {
   return (
     <View>
-      <HomeOwner />
-      {/* <TenantsProfile /> */}
+      <ProfileUser/>
     </View>
   );
 };

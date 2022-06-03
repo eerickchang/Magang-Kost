@@ -6,6 +6,7 @@ import HomeOwner from './HomeOwner';
 import ViewDetails from './ViewDetails';
 import LanjutanViewPenyewa from './LanjutanViewPenyewa';
 import ViewBookedOwner from './ViewBookedOwner';
+import ProfileUser from './ProfileUser';
 
 
 export {
@@ -17,4 +18,5 @@ export {
   ViewDetails,
   LanjutanViewPenyewa,
   ViewBookedOwner,
+  ProfileUser,
 };
