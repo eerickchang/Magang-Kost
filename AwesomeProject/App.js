@@ -27,7 +27,7 @@ import {
 const App = () => {
   return (
     <View>
-      
+      <ProfileUser/>
       {/* <TenantsProfile /> */}
       {/* <ViewBookedOwner/> */}
     </View>

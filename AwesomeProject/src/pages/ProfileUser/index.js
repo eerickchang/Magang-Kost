@@ -6,7 +6,8 @@ import { IconForward,
             IconRegistration,
             IconCardWallet,
             IconDeleteTicket,
-            IconHomeChecked,} from '../../assets'
+            IconHomeChecked,
+            } from '../../assets'
 
 const ProfileUser = () => {
   return (
@@ -69,11 +70,12 @@ const ProfileUser = () => {
     <Button
         title="Logout"
         color='#FFC700'
-        onPress={() => Alert.alert('Simple Button pressed')}
+        onPress={() => Alert.alert('I love you Ferren')}
       />
 
     </View>
 
+   
 
     </View>
 
