@@ -1,11 +1,12 @@
 import Button from './Button';
 import Label from './Label';
 import TextInput from './TextInput';
-import BorderSelectUser from './BorderSelectUser';
 import Gap from './Gap';
-import ButtonAddView from './BtnAddView';
+import ContentHomeOwner from './ContentHomeOwner';
+import BorderSelectUser from './BorderSelectUser';
 import TenantsProfile from './TenantsProfile';
 import Footer from './Footer';
+import HeaderOwner from './HeaderOwner';
 
 export {
   Button,
@@ -14,6 +15,7 @@ export {
   TextInput,
   Gap,
   BorderSelectUser,
-  ButtonAddView,
   Footer,
+  HeaderOwner,
+  ContentHomeOwner,
 };

@@ -1,20 +1,42 @@
 import {StyleSheet, Text, View} from 'react-native';
 import React from 'react';
-import { BtnAddView } from '../../components';
-import { User } from '../../assets';
+import {ContentHomeOwner, Gap} from '../../components';
+import {User} from '../../assets';
 
 const HomeOwner = () => {
   return (
     <View style={styles.container}>
-      <User/>
-      <Text style={styles.greeting}>Hi George,</Text>
-      <Text style={styles.greeting2}>Welcome Back!</Text>
-      <View style={styles.kotak1}>
-        <Text style={styles.TitleKotak1}>Add Kost</Text>
-        <Text style={styles.isiKotak1}>Already have 2 kost</Text>
-        <View style={styles.btnadd1}>
-        <BtnAddView/>
+      <View style={styles.header}>
+        <View style={styles.subHeader}>
+        <Text style={styles.greeting}>Hi George,</Text>
+        
+        <Text style={styles.greeting2}>Welcome Back!</Text>
+        
         </View>
+        <User style={styles.userIcon} />
+      </View>
+      <Gap height={20} />
+      <View style={styles.Konten1}>
+        <ContentHomeOwner
+          backgroundColor="#FFC700"
+          title={'Add Kost'}
+          subTitle={'Already have 2 Kost'}
+          buton={'Add'}
+        />
+        <Gap height={20} />
+        <ContentHomeOwner
+          backgroundColor="#8FFF00"
+          title={'View Book'}
+          subTitle={'3 Rooms has been booked'}
+          buton={'View'}
+        />
+        <Gap height={20} />
+        <ContentHomeOwner
+          backgroundColor="#00FFB2"
+          title={'View Tenant'}
+          subTitle={'there are 3 tenants'}
+          buton={'View'}
+        />
       </View>
     </View>
   );
@@ -23,6 +45,16 @@ const HomeOwner = () => {
 export default HomeOwner;
 
 const styles = StyleSheet.create({
+  header: {
+    flexDirection: 'row',
+  },
+  subHeader: {
+
+  },
+  userIcon:{
+    marginTop:50,
+    marginLeft: 102,
+  },
   greeting: {
     marginTop: 41,
     marginLeft: 33,
@@ -36,25 +68,4 @@ const styles = StyleSheet.create({
     fontWeight: 'bold',
     color: 'black',
   },
-  kotak1: {
-    backgroundColor: '#FFC700',
-    padding: 20,
-    elevation: 4,
-    width: 293,
-    height: 128,
-    borderRadius: 8,
-    marginLeft: 33,
-  },
-  TitleKotak1: {
-    fontSize: 15,
-    fontWeight: 'bold',
-    color: '#000',
-  },
-  isiKotak1: {
-    color: 'black',
-    fontSize: 14,
-  },
-  btnadd1: {
-    marginLeft: 193,
-  }
 });

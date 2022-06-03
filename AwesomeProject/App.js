@@ -12,9 +12,12 @@ import {
   Button,
   BorderSelectUser,
   HomeOwner,
+  ContentHomeOwner,
+  User,
   Footer,
   LanjutanViewPenyewa,
   TenantsProfile,
+  HeaderOwner,
 } from './src';
 
 const App = () => {
