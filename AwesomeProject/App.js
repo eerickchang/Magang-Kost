@@ -10,12 +10,18 @@ import {
   TextInput,
   Label,
   Button,
+  Login,
+  TouchableOpacity,
 } from './src';
 
 const App = () => {
   return (
     <View>
-      <ViewDetails />
+      
+      <Login />
+      
+     
+     
     </View>
   );
 };
