@@ -1,12 +1,16 @@
 import Button from './Button';
 import Label from './Label';
 import TextInput from './TextInput';
+import HeaderAddOwner from './HeaderAddOwner';
+import ContentAddOwner from './ContentAddOwner';
+
 import Gap from './Gap';
 import ContentHomeOwner from './ContentHomeOwner';
 import BorderSelectUser from './BorderSelectUser';
 import TenantsProfile from './TenantsProfile';
+// import HeaderOwner from './HeaderOwner';
+import ContentViewBookedOwner from './ContentViewBookedOwn';
 import Footer from './Footer';
-import HeaderOwner from './HeaderOwner';
 
 export {
   Button,
@@ -16,6 +20,9 @@ export {
   Gap,
   BorderSelectUser,
   Footer,
-  HeaderOwner,
+//   HeaderOwner,
+  ContentViewBookedOwner,
   ContentHomeOwner,
+  HeaderAddOwner,
+  ContentAddOwner
 };

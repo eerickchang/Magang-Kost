@@ -10,6 +10,7 @@ import {
   TextInput,
   Label,
   Button,
+  AddOwner,
   BorderSelectUser,
   HomeOwner,
   ContentHomeOwner,
@@ -19,13 +20,16 @@ import {
   TenantsProfile,
   HeaderOwner,
   ProfileUser,
-  
+  ViewBookedOwner
 } from './src';
+
 
 const App = () => {
   return (
     <View>
-      <ProfileUser/>
+      
+      {/* <TenantsProfile /> */}
+      {/* <ViewBookedOwner/> */}
     </View>
   );
 };
