@@ -10,15 +10,23 @@ import {
   TextInput,
   Label,
   Button,
+  BorderSelectUser,
   HomeOwner,
   ContentHomeOwner,
   User,
+  Footer,
+  LanjutanViewPenyewa,
+  TenantsProfile,
+  HeaderOwner,
 } from './src';
+import ViewBookedOwner from './src/pages/ViewBookedOwner';
 
 const App = () => {
   return (
     <View>
       <HomeOwner />
+      {/* <TenantsProfile /> */}
+      <HeaderOwner/>
     </View>
   );
 };

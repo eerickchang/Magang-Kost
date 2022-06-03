@@ -3,7 +3,7 @@ import React from 'react';
 import {ContentHomeOwner, Gap} from '../../components';
 import {User} from '../../assets';
 
-const Owner = () => {
+const HomeOwner = () => {
   return (
     <View style={styles.container}>
       <View style={styles.header}>
@@ -25,7 +25,7 @@ const Owner = () => {
   );
 };
 
-export default Owner;
+export default HomeOwner;
 
 const styles = StyleSheet.create({
   header: {
