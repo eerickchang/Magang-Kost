@@ -17,6 +17,9 @@ import IconForward from './IconForward.svg';
 import IconHomeChecked from './IconHomeChecked.svg';
 import UserProfile from './UserProfile.svg';
 import IconRegistration from './IconRegistration.svg';
+import Elipse from './Ellipse.svg';
+import HomeNav from './HomeNav.svg';
+import UserNav from './UserNav.svg';
 
 
 export {
@@ -39,4 +42,8 @@ export {
   IconForward,
   IconHomeChecked,
   IconRegistration,
+  Elipse,
+  HomeNav,
+  UserNav,
+
 };

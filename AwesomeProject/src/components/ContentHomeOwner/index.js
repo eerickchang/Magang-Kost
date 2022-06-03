@@ -4,14 +4,14 @@ import React from 'react';
 const ContentHomeOwner = ({backgroundColor, buton, title, subTitle}) => {
   return (
     <View>
-      <View style={styles.kotak1 (backgroundColor)}>
+      <View style={styles.kotak1(backgroundColor)}>
         <Text style={styles.TitleKotak1}>{title}</Text>
         <Text style={styles.isiKotak1}>{subTitle}</Text>
         <View style={styles.btnadd1}></View>
-    <TouchableOpacity style={styles.container}>
-      <Text style={styles.txt}>{buton}</Text>
-    </TouchableOpacity>
-    </View>
+        <TouchableOpacity style={styles.container}>
+          <Text style={styles.txt}>{buton}</Text>
+        </TouchableOpacity>
+      </View>
     </View>
   );
 };
@@ -19,9 +19,8 @@ const ContentHomeOwner = ({backgroundColor, buton, title, subTitle}) => {
 export default ContentHomeOwner;
 
 const styles = StyleSheet.create({
- 
   kotak1: backgroundColor => ({
-    backgroundColor:backgroundColor,
+    backgroundColor: backgroundColor,
     padding: 20,
     elevation: 4,
     width: 293,
@@ -29,7 +28,7 @@ const styles = StyleSheet.create({
     borderRadius: 8,
     marginLeft: 33,
   }),
-  
+
   TitleKotak1: {
     fontSize: 15,
     fontWeight: 'bold',
@@ -50,7 +49,7 @@ const styles = StyleSheet.create({
     borderRadius: 20,
     marginLeft: 190,
   },
-  txt:{
+  txt: {
     marginTop: 4,
     marginLeft: 18,
     color: '#fff',

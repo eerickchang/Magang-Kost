@@ -22,7 +22,6 @@ import {
   
 } from './src';
 
-
 const App = () => {
   return (
     <View>
