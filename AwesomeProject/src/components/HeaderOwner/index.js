@@ -1,6 +1,6 @@
-import { StyleSheet, Text, View } from 'react-native'
-import React from 'react'
-import { IconBackLeft, MatahariKuning, User, Gap } from '../../../src'
+import {StyleSheet, Text, View} from 'react-native';
+import React from 'react';
+import {IconBackLeft, MatahariKuning, User, Gap} from '../../../src';
 
 const HeaderOwner = () => {
   return (
@@ -12,9 +12,9 @@ const HeaderOwner = () => {
             <User/>
         </View>
     </View>
-  )
-}
+  );
+};
 
 export default HeaderOwner
 
-const styles = StyleSheet.create({})
+const styles = StyleSheet.create({});

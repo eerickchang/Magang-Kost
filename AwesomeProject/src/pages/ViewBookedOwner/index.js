@@ -29,10 +29,10 @@ const ViewBookedOwner = () => {
       <ContentViewBookedOwner title={'Princeton'} gambar={<Homestay2/>} user={'Doe John'} phone={'+62-8562-4563-789'} harga={'$32/Month'} colorMark={'#FBDC3D'}/>
       <ContentViewBookedOwner title={'Tantaton'} gambar={<Homestay3/>} user={'D John'} phone={'+62-8565-7777-789'} harga={'$92/Month'} colorMark={'#8FFF00'}/>
     </View>
-  )
-}
+  );
+};
 
-export default ViewBookedOwner
+export default ViewBookedOwner;
 
 const styles = StyleSheet.create({
     containerWait: {

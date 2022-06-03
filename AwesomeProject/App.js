@@ -1,4 +1,4 @@
-import {StyleSheet, Text, View} from 'react-native';
+import {StyleSheet, View} from 'react-native';
 import React from 'react';
 
 import {
@@ -12,12 +12,15 @@ import {
   Button,
   BorderSelectUser,
   HomeOwner,
+  ContentHomeOwner,
+  User,
   Footer,
   LanjutanViewPenyewa,
   TenantsProfile,
   HeaderOwner,
+  ProfileUser,
+  ViewBookedOwner
 } from './src';
-import ViewBookedOwner from './src/pages/ViewBookedOwner';
 
 const App = () => {
   return (

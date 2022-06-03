@@ -1,5 +1,5 @@
 import User from './User.svg';
-import IconBackLeft from './IconBackLeft.svg';
+import IconBackLeft  from './IconBackLeft.svg';
 import SelectPenyewa from './SelectPenyewa.svg';
 import SelectOwner from './SelectOwner.svg';
 import Home from './Home.svg';
@@ -15,6 +15,16 @@ import Homestay1 from './Homestay1.svg';
 import Homestay2 from './Homestay2.svg';
 import Homestay3 from './Homestay3.svg';
 import HumanHead from './HumanHead.svg'
+import IconCardWallet from './IconCardWallet.svg';
+import IconDeleteTicket from './IconDeleteTicket.svg';
+import IconForward from './IconForward.svg';
+import IconHomeChecked from './IconHomeChecked.svg';
+import UserProfile from './UserProfile.svg';
+import IconRegistration from './IconRegistration.svg';
+import Elipse from './Ellipse.svg';
+import HomeNav from './HomeNav.svg';
+import UserNav from './UserNav.svg';
+
 
 export {
   IconBackLeft,
@@ -34,4 +44,14 @@ export {
   Homestay2,
   Homestay3,
   HumanHead,
+  UserProfile,
+  IconCardWallet,
+  IconDeleteTicket,
+  IconForward,
+  IconHomeChecked,
+  IconRegistration,
+  Elipse,
+  HomeNav,
+  UserNav,
+
 };
