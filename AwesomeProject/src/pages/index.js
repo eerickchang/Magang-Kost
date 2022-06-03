@@ -5,6 +5,8 @@ import SplashScreen from './SplashScreen';
 import HomeOwner from './HomeOwner';
 import ViewDetails from './ViewDetails';
 import LanjutanViewPenyewa from './LanjutanViewPenyewa';
+import ViewBookedOwner from './ViewBookedOwner';
+
 
 export {
   SelectUser,
@@ -14,4 +16,5 @@ export {
   HomeOwner,
   ViewDetails,
   LanjutanViewPenyewa,
+  ViewBookedOwner,
 };

@@ -19,14 +19,13 @@ import {
   TenantsProfile,
   HeaderOwner,
 } from './src';
-import ViewBookedOwner from './src/pages/ViewBookedOwner';
+
 
 const App = () => {
   return (
     <View>
       <HomeOwner />
       {/* <TenantsProfile /> */}
-      <HeaderOwner/>
     </View>
   );
 };

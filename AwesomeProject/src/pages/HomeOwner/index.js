@@ -7,19 +7,36 @@ const HomeOwner = () => {
   return (
     <View style={styles.container}>
       <View style={styles.header}>
+        <View style={styles.subHeader}>
+        <Text style={styles.greeting}>Hi George,</Text>
         
-          <Text style={styles.greeting}>Hi George,</Text>
-          <User />
-          <Text style={styles.greeting2}>Welcome Back!</Text>
+        <Text style={styles.greeting2}>Welcome Back!</Text>
         
+        </View>
+        <User style={styles.userIcon} />
       </View>
       <Gap height={20} />
       <View style={styles.Konten1}>
-        <ContentHomeOwner backgroundColor="#FFC700" title={'Add Kost'} subTitle={'Already have 2 Kost'} buton={'Add'} />
+        <ContentHomeOwner
+          backgroundColor="#FFC700"
+          title={'Add Kost'}
+          subTitle={'Already have 2 Kost'}
+          buton={'Add'}
+        />
         <Gap height={20} />
-        <ContentHomeOwner backgroundColor="#8FFF00" title={'View Book'} subTitle={'3 Rooms has been booked'} buton={'View'} />
+        <ContentHomeOwner
+          backgroundColor="#8FFF00"
+          title={'View Book'}
+          subTitle={'3 Rooms has been booked'}
+          buton={'View'}
+        />
         <Gap height={20} />
-        <ContentHomeOwner backgroundColor="#00FFB2" title={'View Tenant'} subTitle={'there are 3 tenants'} buton={'View'} />
+        <ContentHomeOwner
+          backgroundColor="#00FFB2"
+          title={'View Tenant'}
+          subTitle={'there are 3 tenants'}
+          buton={'View'}
+        />
       </View>
     </View>
   );
@@ -30,6 +47,13 @@ export default HomeOwner;
 const styles = StyleSheet.create({
   header: {
     flexDirection: 'row',
+  },
+  subHeader: {
+
+  },
+  userIcon:{
+    marginTop:50,
+    marginLeft: 102,
   },
   greeting: {
     marginTop: 41,
