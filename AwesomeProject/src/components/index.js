@@ -5,7 +5,8 @@ import BorderSelectUser from './BorderSelectUser';
 import Gap from './Gap';
 import ButtonAddView from './BtnAddView';
 import TenantsProfile from './TenantsProfile';
-import HeaderOwner from './HeaderOwner'
+import HeaderOwner from './HeaderOwner';
+import ContentViewBookedOwner from './ContentViewBookedOwn';
 
 export {
   Button,
@@ -16,4 +17,5 @@ export {
   BorderSelectUser,
   ButtonAddView,
   HeaderOwner,
+  ContentViewBookedOwner,
 };

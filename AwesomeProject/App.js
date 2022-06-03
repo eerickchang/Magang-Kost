@@ -23,7 +23,7 @@ const App = () => {
   return (
     <View>
       {/* <TenantsProfile /> */}
-      <HeaderOwner/>
+      <ViewBookedOwner/>
     </View>
   );
 };

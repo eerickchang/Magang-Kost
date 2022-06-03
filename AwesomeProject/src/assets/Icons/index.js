@@ -11,6 +11,10 @@ import Tenants4 from './Tenants4.svg';
 import Tenants5 from './Tenants5.svg';
 import LocationBlank from './LocationBlank.svg';
 import Job from './Job.svg';
+import Homestay1 from './Homestay1.svg';
+import Homestay2 from './Homestay2.svg';
+import Homestay3 from './Homestay3.svg';
+import HumanHead from './HumanHead.svg'
 
 export {
   IconBackLeft,
@@ -26,4 +30,8 @@ export {
   MatahariKuning,
   LocationBlank,
   Job,
+  Homestay1,
+  Homestay2,
+  Homestay3,
+  HumanHead,
 };
