@@ -4,7 +4,7 @@ import React from 'react';
 const TextInput = () => {
   return (
     <View style={styles.container}>
-      <Text style={styles.txt}>Username</Text>
+      <Text style={styles.txt}>Username Oke</Text>
     </View>
   );
 };
