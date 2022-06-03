@@ -31,6 +31,7 @@ import SearchHome from './SearchHome.svg';
 import ImageHome1 from './ImageHome1.svg';
 import ImageHome2 from './ImageHome2.svg';
 import ImageHome3 from './ImageHome3.svg';
+import UserProfilOwner from './UserProfilOwner.svg';
 
 export {
   IconBackLeft,
@@ -60,6 +61,7 @@ export {
   HomeNav,
   UserNav,
   AddImage,
+  UserProfilOwner,
   PencilEdit,
   IconBack,
   SearchHome,

@@ -3,6 +3,7 @@ import SignIn from './SignIn';
 import SignUp from './SignUp';
 import SplashScreen from './SplashScreen';
 import AddOwner from './AddOwner';
+import ProfilOwner from './ProfilOwner';
 
 import HomeOwner from './HomeOwner';
 import ViewDetails from './ViewDetails';
@@ -24,5 +25,6 @@ export {
   ProfileUser,
   AddOwner,
   HomePenyewa,
-  ContentHomePenyewa
+  ContentHomePenyewa,
+  ProfilOwner,
 };

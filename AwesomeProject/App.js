@@ -21,16 +21,16 @@ import {
   HeaderOwner,
   ProfileUser,
   ViewBookedOwner,
-  HomePenyewa
+  HomePenyewa,
 } from './src';
-
 
 const App = () => {
   return (
     <View>
-      <HomePenyewa/>
+      <HomePenyewa />
       {/* <TenantsProfile /> */}
       {/* <ViewBookedOwner/> */}
+      {/* <ProfilOwner /> */}
     </View>
   );
 };
