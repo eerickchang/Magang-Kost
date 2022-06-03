@@ -9,6 +9,8 @@ import ViewDetails from './ViewDetails';
 import LanjutanViewPenyewa from './LanjutanViewPenyewa';
 import ViewBookedOwner from './ViewBookedOwner';
 import ProfileUser from './ProfileUser';
+import HomePenyewa from './HomePenyewa';
+import ContentHomePenyewa from '../components/ContentHomePenyewa';
 
 export {
   SelectUser,
@@ -20,5 +22,7 @@ export {
   LanjutanViewPenyewa,
   ViewBookedOwner,
   ProfileUser,
-  AddOwner
+  AddOwner,
+  HomePenyewa,
+  ContentHomePenyewa
 };

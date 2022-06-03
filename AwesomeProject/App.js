@@ -20,14 +20,15 @@ import {
   TenantsProfile,
   HeaderOwner,
   ProfileUser,
-  ViewBookedOwner
+  ViewBookedOwner,
+  HomePenyewa
 } from './src';
 
 
 const App = () => {
   return (
     <View>
-      
+      <HomePenyewa/>
       {/* <TenantsProfile /> */}
       {/* <ViewBookedOwner/> */}
     </View>

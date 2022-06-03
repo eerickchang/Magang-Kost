@@ -2,7 +2,7 @@ import PencilEdit from './PencilEdit.svg';
 import AddImage from './AddImage.svg';
 import IconBack from './Back.svg';
 import User from './User.svg';
-import IconBackLeft  from './IconBackLeft.svg';
+import IconBackLeft from './IconBackLeft.svg';
 import SelectPenyewa from './SelectPenyewa.svg';
 import SelectOwner from './SelectOwner.svg';
 import Home from './Home.svg';
@@ -17,7 +17,7 @@ import Job from './Job.svg';
 import Homestay1 from './Homestay1.svg';
 import Homestay2 from './Homestay2.svg';
 import Homestay3 from './Homestay3.svg';
-import HumanHead from './HumanHead.svg'
+import HumanHead from './HumanHead.svg';
 import IconCardWallet from './IconCardWallet.svg';
 import IconDeleteTicket from './IconDeleteTicket.svg';
 import IconForward from './IconForward.svg';
@@ -27,7 +27,10 @@ import IconRegistration from './IconRegistration.svg';
 import Elipse from './Ellipse.svg';
 import HomeNav from './HomeNav.svg';
 import UserNav from './UserNav.svg';
-
+import SearchHome from './SearchHome.svg';
+import ImageHome1 from './ImageHome1.svg';
+import ImageHome2 from './ImageHome2.svg';
+import ImageHome3 from './ImageHome3.svg';
 
 export {
   IconBackLeft,
@@ -59,5 +62,8 @@ export {
   AddImage,
   PencilEdit,
   IconBack,
-
+  SearchHome,
+  ImageHome1,
+  ImageHome2,
+  ImageHome3,
 };
