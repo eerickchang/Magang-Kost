@@ -20,7 +20,9 @@ import {
   TenantsProfile,
   HeaderOwner,
   ProfileUser,
-  ViewBookedOwner
+  ViewBookedOwner,
+  ProfilOwner,
+  ButtonOwner
 } from './src';
 
 
@@ -30,6 +32,8 @@ const App = () => {
       
       {/* <TenantsProfile /> */}
       {/* <ViewBookedOwner/> */}
+     <ProfilOwner/>
+    
     </View>
   );
 };

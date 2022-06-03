@@ -28,6 +28,7 @@ import IconRegistration from './IconRegistration.svg';
 import Elipse from './Ellipse.svg';
 import HomeNav from './HomeNav.svg';
 import UserNav from './UserNav.svg';
+import UserProfilOwner from './UserProfilOwner.svg';
 
 
 export {
@@ -57,5 +58,6 @@ export {
   Elipse,
   HomeNav,
   UserNav,
-  AddImage
+  AddImage,
+  UserProfilOwner
 };

@@ -11,6 +11,7 @@ import TenantsProfile from './TenantsProfile';
 // import HeaderOwner from './HeaderOwner';
 import ContentViewBookedOwner from './ContentViewBookedOwn';
 import Footer from './Footer';
+import ButtonOwner from './ButtonOwner';
 
 export {
   Button,
@@ -24,5 +25,6 @@ export {
   ContentViewBookedOwner,
   ContentHomeOwner,
   HeaderAddOwner,
-  ContentAddOwner
+  ContentAddOwner,
+  ButtonOwner
 };
