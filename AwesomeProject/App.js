@@ -20,7 +20,7 @@ import {
 const App = () => {
   return (
     <View>
-      <TenantsProfile />
+      <LanjutanViewPenyewa />
     </View>
   );
 };

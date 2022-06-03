@@ -11,6 +11,9 @@ import Tenants4 from './Tenants4.svg';
 import Tenants5 from './Tenants5.svg';
 import LocationBlank from './LocationBlank.svg';
 import Job from './Job.svg';
+import Elipse from './Ellipse.svg';
+import HomeNav from './HomeNav.svg';
+import UserNav from './UserNav.svg';
 
 export {
   IconBackLeft,
@@ -26,4 +29,7 @@ export {
   MatahariKuning,
   LocationBlank,
   Job,
+  Elipse,
+  HomeNav,
+  UserNav,
 };

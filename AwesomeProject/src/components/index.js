@@ -5,6 +5,7 @@ import BorderSelectUser from './BorderSelectUser';
 import Gap from './Gap';
 import ButtonAddView from './BtnAddView';
 import TenantsProfile from './TenantsProfile';
+import Footer from './Footer';
 
 export {
   Button,
@@ -14,4 +15,5 @@ export {
   Gap,
   BorderSelectUser,
   ButtonAddView,
+  Footer,
 };
