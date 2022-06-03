@@ -1,7 +1,6 @@
-
+import PencilEdit from './PencilEdit.svg';
 import AddImage from './AddImage.svg';
-
-
+import IconBack from './Back.svg';
 import User from './User.svg';
 import IconBackLeft  from './IconBackLeft.svg';
 import SelectPenyewa from './SelectPenyewa.svg';
@@ -57,5 +56,8 @@ export {
   Elipse,
   HomeNav,
   UserNav,
-  AddImage
+  AddImage,
+  PencilEdit,
+  IconBack,
+
 };
