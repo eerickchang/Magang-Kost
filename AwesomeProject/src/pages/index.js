@@ -9,7 +9,6 @@ import AddOwner from './AddOwner';
 import ProfilOwner from './ProfilOwner';
 
 import HomeOwner from './HomeOwner';
-import ViewDetails from './ViewDetails';
 import LanjutanViewPenyewa from './LanjutanViewPenyewa';
 import ViewBookedOwner from './ViewBookedOwner';
 import ProfileUser from './ProfileUser';
