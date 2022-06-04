@@ -3,7 +3,7 @@ import SignIn from './SignIn';
 import SignUp from './SignUp';
 import SplashScreen from './SplashScreen';
 import AddOwner from './AddOwner';
-
+import HeaderOwner from '../components/HeaderOwner';
 import HomeOwner from './HomeOwner';
 import ViewDetails from './ViewDetails';
 import LanjutanViewPenyewa from './LanjutanViewPenyewa';
@@ -20,5 +20,6 @@ export {
   LanjutanViewPenyewa,
   ViewBookedOwner,
   ProfileUser,
+  HeaderOwner,
   AddOwner
 };

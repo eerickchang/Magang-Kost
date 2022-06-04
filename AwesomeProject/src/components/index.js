@@ -3,7 +3,7 @@ import Label from './Label';
 import TextInput from './TextInput';
 import HeaderAddOwner from './HeaderAddOwner';
 import ContentAddOwner from './ContentAddOwner';
-
+import ContentViewPenyewa from './ContentViewPenyewa';
 import Gap from './Gap';
 import ContentHomeOwner from './ContentHomeOwner';
 import BorderSelectUser from './BorderSelectUser';
@@ -24,5 +24,6 @@ export {
   ContentViewBookedOwner,
   ContentHomeOwner,
   HeaderAddOwner,
-  ContentAddOwner
+  ContentAddOwner,
+  ContentViewPenyewa
 };

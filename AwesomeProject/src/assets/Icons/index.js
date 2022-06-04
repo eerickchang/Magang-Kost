@@ -1,6 +1,5 @@
 import PencilEdit from './PencilEdit.svg';
 import AddImage from './AddImage.svg';
-import IconBack from './Back.svg';
 
 import User from './User.svg';
 import IconBackLeft  from './IconBackLeft.svg';
@@ -28,7 +27,9 @@ import IconRegistration from './IconRegistration.svg';
 import Elipse from './Ellipse.svg';
 import HomeNav from './HomeNav.svg';
 import UserNav from './UserNav.svg';
-
+import BoardingHouse1 from './BoardingHouse1.svg';
+import BoardingHouse2 from './BoardingHouse2.svg';
+import WomanProfile from './WomanProfile.svg'
 
 export {
   IconBackLeft,
@@ -57,5 +58,9 @@ export {
   Elipse,
   HomeNav,
   UserNav,
-  AddImage
+  AddImage,
+  PencilEdit,
+  BoardingHouse1,
+  BoardingHouse2,
+  WomanProfile
 };

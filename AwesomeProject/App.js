@@ -20,8 +20,10 @@ import {
   TenantsProfile,
   HeaderOwner,
   ProfileUser,
-  ViewBookedOwner
+  ViewBookedOwner,
+  ContentViewPenyewa
 } from './src';
+import ViewPenyewa from './src/pages/ViewPenyewa';
 
 
 const App = () => {
