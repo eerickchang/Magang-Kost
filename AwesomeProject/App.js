@@ -21,17 +21,24 @@ import {
   HeaderOwner,
   ProfileUser,
   ViewBookedOwner,
+<<<<<<< HEAD
   ContentViewPenyewa
+=======
+  LoginOwner,
+  HomePenyewa,
+>>>>>>> refs/remotes/origin/Iterasi_1
 } from './src';
 import ViewPenyewa from './src/pages/ViewPenyewa';
-
 
 const App = () => {
   return (
     <View>
-      
+      <LoginOwner />
+      {/* <SplashScreen /> */}
+
       {/* <TenantsProfile /> */}
       {/* <ViewBookedOwner/> */}
+      {/* <ProfilOwner /> */}
     </View>
   );
 };

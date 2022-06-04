@@ -1,4 +1,4 @@
-import { StyleSheet, Text, View,} from 'react-native'
+import { StyleSheet, Text, View, Button, Alert} from 'react-native'
 import React from 'react'
 import { IconForward,
             IconBackLeft,
@@ -64,7 +64,15 @@ const ProfileUser = () => {
             
      </View>
 
-    
+    <View style={styles.footer}>
+
+    <Button
+        title="Logout"
+        color='#FFC700'
+        onPress={() => Alert.alert('Simple Button pressed')}
+      />
+
+    </View>
 
 
     </View>
@@ -173,6 +181,15 @@ const styles = StyleSheet.create({
         backgroundColor: '#FFC700',
         position: 'absolute',
         borderBottomRightRadius: 300
+    },
+
+    footer:{
+        marginHorizontal: 65,
+        marginTop: 72,
+        width: 261,
+        height: 49,
+        borderRadius: 8,
+       
     }
 
 
