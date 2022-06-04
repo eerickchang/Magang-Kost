@@ -22,6 +22,7 @@ import {
   ProfileUser,
   ViewBookedOwner,
   LoginOwner,
+  HomePenyewa,
 } from './src';
 
 const App = () => {
@@ -32,6 +33,7 @@ const App = () => {
 
       {/* <TenantsProfile /> */}
       {/* <ViewBookedOwner/> */}
+      {/* <ProfilOwner /> */}
     </View>
   );
 };

@@ -27,8 +27,16 @@ import IconRegistration from './IconRegistration.svg';
 import Elipse from './Ellipse.svg';
 import HomeNav from './HomeNav.svg';
 import UserNav from './UserNav.svg';
+<<<<<<< HEAD
 import LogoKecil from './LogoKecil.svg';
 import LogoBesar from './LogoBesar.svg';
+=======
+import SearchHome from './SearchHome.svg';
+import ImageHome1 from './ImageHome1.svg';
+import ImageHome2 from './ImageHome2.svg';
+import ImageHome3 from './ImageHome3.svg';
+import UserProfilOwner from './UserProfilOwner.svg';
+>>>>>>> a9756754db7975ff12061a0e3ad4c796a9fbc34a
 
 export {
   IconBackLeft,
@@ -58,8 +66,16 @@ export {
   HomeNav,
   UserNav,
   AddImage,
+  UserProfilOwner,
   PencilEdit,
   IconBack,
+<<<<<<< HEAD
   LogoKecil,
   LogoBesar,
+=======
+  SearchHome,
+  ImageHome1,
+  ImageHome2,
+  ImageHome3,
+>>>>>>> a9756754db7975ff12061a0e3ad4c796a9fbc34a
 };
