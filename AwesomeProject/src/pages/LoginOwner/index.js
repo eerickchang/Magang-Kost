@@ -1,104 +1,105 @@
-import { StyleSheet, Text, View } from 'react-native'
-import React from 'react'
-import { Button, Gap } from '../../components'
-import { LogoKecil } from '../../assets'
+import {StyleSheet, Text, View, TouchableOpacity} from 'react-native';
+import React from 'react';
+import {Gap, TextInput} from '../../components';
+import {LogoKecil} from '../../assets';
 
-
-
-const Login = () => {
+const LoginOwner = () => {
   return (
-    <View 
-    style={{ 
+    <View
+      style={{
         justifyContent: 'center',
         alignItems: 'center',
-         }}>
-           
-            <View style={{marginTop: 82 }}>
-                <LogoKecil width={107} height={82}/>
-            </View>
-            
+      }}>
+      <View style={{marginTop: 82}}>
+        <LogoKecil width={107} height={82} />
+      </View>
 
-             <Text
-                 style={styles.Ocop }>
-                    Login
-            </Text>
-            <Gap  height={44}/>
-            
-            
+      <Text style={styles.Ocop}> Login</Text>
+      <Gap height={44} />
 
-           <Text 
-             style={styles.poco}>
-                  Hello Mr. Ryan 
-            </Text>
-            <Gap  height={23}/>
+      <Gap height={25} />
 
-            <Text 
-            style={styles.ryan}>
-                Hello Ocop
-            </Text>
+      <TextInput title={'Username'} />
+      <Gap height={23} />
+      <TextInput title={'Password'} />
+      <Gap height={23} />
 
-            <View>
-            <Gap height={25}/>
-            </View>
+      <View style={styles.Kotak}>
+        <View style={styles.Centang}></View>
 
-            <View style={styles.oland}> 
-            </View>
-            <Gap height={90}/>
+        <Text style={styles.txtCentang}>remember me?</Text>
+      </View>
 
-                    
-                    <Text
-                 style={styles.ratzy}>
-                        Login
-                 </Text>
-             </View>
-  )
-}
+      <Gap height={51} />
+      <TouchableOpacity style={styles.Button}>
+        <Text style={styles.textLog}>Login</Text>
+      </TouchableOpacity>
 
-export default Login
+      <Gap height={39} />
+      <View style={styles.Signin}>
+        <Text style={styles.txtSignin}>don't have an account? </Text>
+        <Text style={styles.txtSigninBold}> sign in</Text>
+      </View>
+    </View>
+  );
+};
+
+export default LoginOwner;
 
 const styles = StyleSheet.create({
-    Ocop: {
-        fontWeight: 'bold', 
-             fontSize: 24,
-             color: '#000000',
-    },
-    poco: {
-        borderWidth: 1,
-              width: 261,
-                height: 49,
-                borderRadius: 10,
-                 
-                marginLeft: 49,
-                 marginRight: 50,
-    },
-    ryan:{
-        borderWidth: 1,
-                 width: 261, 
-                 height: 49,
-                 borderRadius: 10,
-                 marginRight: 50,
-                 marginLeft: 49,
-    },
-    ratzy: {
-        borderWidth: 1,
-                width: 261,
-                height: 49,
-                borderRadius: 10,
-                backgroundColor: '#FFC700',
-    },
-    oland: {
-        borderWidth: 1,
-         width: 14,
-          height: 14,
-          marginLeft: 51,
-          marginRight: 295,
-    },
-    ando:{
-        width: 134, 
-        height: 16,
-        marginLeft: 58,
-        marginRight: 175,
-    },
-   
+  Ocop: {
+    fontWeight: 'bold',
+    fontSize: 24,
+    color: '#000000',
+  },
+  Button: {
+    // borderWidth: 1,
+    backgroundColor: '#FFC700',
+    width: 261,
+    height: 49,
+    borderRadius: 6,
+    marginLeft: 49,
+    marginRight: 50,
 
-})
+    justifyContent: 'center',
+    alignItems: 'center',
+  },
+  textLog: {
+    fontWeight: 'bold',
+    fontSize: 20,
+    color: '#000000',
+  },
+  Kotak: {
+    width: 134,
+    height: 16,
+    flexDirection: 'row',
+    marginLeft: 51,
+    marginRight: 175,
+  },
+  Centang: {
+    borderWidth: 1,
+    width: 14,
+    height: 14,
+  },
+  txtCentang: {
+    width: 127,
+    height: 16,
+    marginLeft: 7,
+
+    color: '#000000',
+  },
+  Signin: {
+    flexDirection: 'row',
+    width: 304,
+    height: 16,
+    justifyContent: 'center',
+    alignItems: 'center',
+  },
+  txtSignin: {
+    color: '#000000',
+  },
+  txtSigninBold: {
+    fontWeight: 'bold',
+    color: '#000000',
+  },
+});

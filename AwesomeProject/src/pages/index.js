@@ -3,9 +3,9 @@ import SignIn from './SignIn';
 import SignUp from './SignUp';
 import SplashScreen from './SplashScreen';
 import ViewDetails from './ViewDetails';
-import Login from './Login';
-import { LogoKecil } from '../assets';
+import  LoginOwner  from './LoginOwner';
 
 
 
-export {SelectUser, SignIn, SignUp, SplashScreen, ViewDetails, Login, LogoKecil};
+
+export {SelectUser, SignIn, SignUp, SplashScreen, ViewDetails, LoginOwner};

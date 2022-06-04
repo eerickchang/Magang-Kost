@@ -1,4 +1,4 @@
-import {StyleSheet, Text, View} from 'react-native';
+import {StyleSheet, View} from 'react-native';
 import React from 'react';
 
 import {
@@ -10,18 +10,28 @@ import {
   TextInput,
   Label,
   Button,
-  Login,
-  TouchableOpacity,
+  AddOwner,
+  BorderSelectUser,
+  HomeOwner,
+  ContentHomeOwner,
+  User,
+  Footer,
+  LanjutanViewPenyewa,
+  TenantsProfile,
+  HeaderOwner,
+  ProfileUser,
+  ViewBookedOwner,
+  LoginOwner,
 } from './src';
 
 const App = () => {
   return (
     <View>
-      
-      <Login />
-      
-     
-     
+      <LoginOwner />
+      {/* <SplashScreen /> */}
+
+      {/* <TenantsProfile /> */}
+      {/* <ViewBookedOwner/> */}
     </View>
   );
 };
