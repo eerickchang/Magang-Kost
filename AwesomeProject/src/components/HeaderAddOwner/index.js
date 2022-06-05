@@ -1,6 +1,6 @@
 import { StyleSheet, Text, View } from 'react-native'
 import React from 'react'
-import { IconBack, User } from '../../assets'
+import { IconBackLeft, User } from '../../assets'
 import Gap from '../Gap'
 
 const HeaderAddOwner = () => {
@@ -8,7 +8,7 @@ const HeaderAddOwner = () => {
     <View style={styles.container}>
       <View style={styles.roundedShape}/>
       <View style={styles.content}>
-        <IconBack />
+        <IconBackLeft />
           <Gap width={238} />
           <User />
       </View>
@@ -21,24 +21,24 @@ export default HeaderAddOwner
 const styles = StyleSheet.create({
   container:
   {
-    height: 122,
-    width: 366,
-    backgroundColor: 'white',
-    
+    // height: 122,
+    // width: 360,
+    // backgroundColor: 'black',
+    position: 'absolute'
   },
   content:
   {
     flexDirection: 'row',
-    marginLeft: 16,
-    marginTop: 23,
-    // position: 'absolute'
+    marginLeft: 26,
+    marginTop: 33,
+    position: 'absolute',
+    // backgroundColor: 'blue'
   },
   roundedShape:
   {
     height: 122,
     width:136, 
     backgroundColor: '#FFC700', 
-    position: 'absolute', 
-    borderBottomRightRadius: 300
+    borderBottomRightRadius: 300,
   }
 })

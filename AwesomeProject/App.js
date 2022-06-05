@@ -10,6 +10,7 @@ import {
   TextInput,
   Label,
   Button,
+  SignUpOwner,
   AddOwner,
   BorderSelectUser,
   HomeOwner,
@@ -21,10 +22,12 @@ import {
   HeaderOwner,
   ProfileUser,
   ViewBookedOwner,
+  ContentViewPenyewa,
   LoginOwner,
   HomePenyewa,
   Home,
 } from './src';
+import ViewPenyewa from './src/pages/ViewPenyewa';
 
 const App = () => {
   return (
