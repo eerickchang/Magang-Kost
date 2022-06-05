@@ -2,7 +2,7 @@ import {StyleSheet, Text, View} from 'react-native';
 import React from 'react';
 import {Button, HeaderSignUp, TextInput, Gap} from '../../components';
 
-const SignUp = () => {
+const SignUpOwner = () => {
   return (
     <View style={styles.container}>
       <View style={styles.input}>
@@ -28,7 +28,7 @@ const SignUp = () => {
   );
 };
 
-export default SignUp;
+export default SignUpOwner;
 
 const styles = StyleSheet.create({
   container: {

@@ -9,12 +9,14 @@ import {
   TextInput,
   Label,
   Button,
+  SignUpOwner,
 } from './src';
+
 
 const App = () => {
   return (
     <View>
-      <SignUp />
+      <SignUpOwner />
     </View>
   );
 };
