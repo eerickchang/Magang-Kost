@@ -1,4 +1,4 @@
-import {StyleSheet, Text, View} from 'react-native';
+import {StyleSheet, View} from 'react-native';
 import React from 'react';
 
 import {
@@ -6,17 +6,39 @@ import {
   SignIn,
   SplashScreen,
   SignUp,
+  ViewDetails,
   TextInput,
   Label,
   Button,
   SignUpOwner,
+  AddOwner,
+  BorderSelectUser,
+  HomeOwner,
+  ContentHomeOwner,
+  User,
+  Footer,
+  LanjutanViewPenyewa,
+  TenantsProfile,
+  HeaderOwner,
+  ProfileUser,
+  ViewBookedOwner,
+  ContentViewPenyewa,
+  LoginOwner,
+  HomePenyewa,
 } from './src';
+import ViewPenyewa from './src/pages/ViewPenyewa';
 
 
 const App = () => {
   return (
     <View>
-      <SignUpOwner />
+      {/* <SignUpOwner /> */}
+      <LoginOwner />
+      {/* <SplashScreen /> */}
+
+      {/* <TenantsProfile /> */}
+      {/* <ViewBookedOwner/> */}
+      {/* <ProfilOwner /> */}
     </View>
   );
 };
