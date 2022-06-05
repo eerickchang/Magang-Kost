@@ -1,4 +1,4 @@
-import {StyleSheet, Text, View} from 'react-native';
+import {StyleSheet, Text, View, TouchableOpacity} from 'react-native';
 import React from 'react';
 import {HomeNav, UserNav} from '../../assets';
 import Gap from '../Gap';
@@ -7,9 +7,13 @@ const Footer = () => {
   return (
     <View style={styles.container}>
       <Gap width={100} />
-      <HomeNav />
+      <TouchableOpacity activeOpacity={0.7}>
+        <HomeNav />
+      </TouchableOpacity>
       <Gap width={80} />
-      <UserNav />
+      <TouchableOpacity activeOpacity={0.7}>
+        <UserNav />
+      </TouchableOpacity>
     </View>
   );
 };
@@ -22,5 +26,6 @@ const styles = StyleSheet.create({
     backgroundColor: '#E5E5E5',
     flexDirection: 'row',
     alignItems: 'center',
+    top: 42,
   },
 });

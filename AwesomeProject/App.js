@@ -23,17 +23,18 @@ import {
   ViewBookedOwner,
   LoginOwner,
   HomePenyewa,
+  Home,
 } from './src';
 
 const App = () => {
   return (
     <View>
-      <LoginOwner />
+      {/* <LoginOwner /> */}
       {/* <SplashScreen /> */}
 
       {/* <TenantsProfile /> */}
-      {/* <ViewBookedOwner/> */}
-      {/* <ProfilOwner /> */}
+      <ViewBookedOwner />
+      {/* <HomePenyewa /> */}
     </View>
   );
 };
