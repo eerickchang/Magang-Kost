@@ -1,4 +1,4 @@
-import { StyleSheet, Text, View, Button, Alert} from 'react-native'
+import { StyleSheet, Text, View, Button, Alert, TouchableOpacity} from 'react-native'
 import React from 'react'
 import { IconForward,
             IconBackLeft,
@@ -19,8 +19,9 @@ const ProfileUser = () => {
     <View style={styles.matahari}/>
 
       <View style={styles.header}>
+          <TouchableOpacity>
             <IconBackLeft/>
-           
+            </TouchableOpacity>
       </View>
 
       <View style={styles.content1}>
@@ -33,38 +34,40 @@ const ProfileUser = () => {
             </View>
 
             <View style={styles.IconRegistration}> 
+            <TouchableOpacity>
             <IconRegistration/> 
+            </TouchableOpacity>
             </View>
       </View>
 
       <View style={styles.content2}>
-
+            <TouchableOpacity>
             <View style={styles.menu}>            
                 <IconHomeChecked/>
                 <Text style={styles.txt2}>Booked</Text>
                 <IconForward  style={styles.forward}/>
             </View>
-            
+            </TouchableOpacity>
      </View>
 
      <View style={styles.content3}>
-
+            <TouchableOpacity>
             <View style={styles.menu}>            
                 <IconCardWallet/>
                 <Text style={styles.txt3}>payment</Text>
                 <IconForward  style={styles.forward2}/>
             </View>
-            
+            </TouchableOpacity>
      </View>
 
      <View style={styles.content3}>
-
+            <TouchableOpacity>
             <View style={styles.menu}>            
                 <IconDeleteTicket/>
                 <Text style={styles.txt4}>Cancelled</Text>
                 <IconForward  style={styles.forward3}/>
             </View>
-            
+            </TouchableOpacity>
      </View>
 
     <View style={styles.footer}>
@@ -145,6 +148,7 @@ const styles = StyleSheet.create({
         flexDirection: 'column',
         marginLeft: 22,
         marginTop: 12,
+        fontFamily: 'Poppins-Bold'
       
     },
 

@@ -10,6 +10,7 @@ import {
   TextInput,
   Label,
   Button,
+  SignUpOwner,
   AddOwner,
   BorderSelectUser,
   HomeOwner,
@@ -20,16 +21,24 @@ import {
   TenantsProfile,
   HeaderOwner,
   ProfileUser,
-  ViewBookedOwner
+  ViewBookedOwner,
+  ContentViewPenyewa,
+  LoginOwner,
+  HomePenyewa,
+  Home,
 } from './src';
-
+import ViewPenyewa from './src/pages/ViewPenyewa';
 
 const App = () => {
   return (
     <View>
-      <ProfileUser/>
+
+      {/* <LoginOwner /> */}
+      {/* <SplashScreen /> */}
       {/* <TenantsProfile /> */}
-      {/* <ViewBookedOwner/> */}
+      {/* <ViewBookedOwner /> */}
+      {/* <HomePenyewa /> */}
+      <ProfileUser/>
     </View>
   );
 };

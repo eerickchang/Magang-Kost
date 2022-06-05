@@ -5,7 +5,7 @@ import Gap from '../Gap'
 
 
 const TextInput_AddOwner = ({title, widthText, widthPencil}) => {
-    // const [kostName, setKostName] = useState({title});
+    const [kostName, setKostName] = useState({title});
 
   return (
       <View style={styles.container}>

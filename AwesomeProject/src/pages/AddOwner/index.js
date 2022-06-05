@@ -1,13 +1,14 @@
-import { StyleSheet,ScrollView, View } from 'react-native'
+import { StyleSheet, View, ScrollView } from 'react-native'
 import React from 'react'
-import { ContentAddOwner, Gap, HeaderAddOwner } from '../../components'
+import { ContentAddOwner, HeaderAddOwner} from '../../components'
 
 
 const AddOwner = () => {
   return (
     <View>
       <HeaderAddOwner />
-        <ContentAddOwner />
+      {/* <HeaderOwner /> */}
+      <ContentAddOwner />
       {/* <FooterContoh /> */}
     </View>
   )
