@@ -14,6 +14,8 @@ const ProfileUser = () => {
     
     <View style={styles.container}>
 
+
+
     <View style={styles.matahari}/>
 
       <View style={styles.header}>
@@ -31,7 +33,7 @@ const ProfileUser = () => {
             </View>
 
             <View style={styles.IconRegistration}> 
-            <IconRegistration /> 
+            <IconRegistration/> 
             </View>
       </View>
 
@@ -70,7 +72,7 @@ const ProfileUser = () => {
     <Button
         title="Logout"
         color='#FFC700'
-        onPress={() => Alert.alert('I love you Ferren')}
+        onPress={() => Alert.alert('Thankyou for comming')}
       />
 
     </View>
@@ -89,6 +91,7 @@ const styles = StyleSheet.create({
     container:{
           
     },
+
 
     header:{
         marginTop:34,
@@ -192,7 +195,7 @@ const styles = StyleSheet.create({
         height: 49,
         borderRadius: 8,
        
-    }
+    },
 
 
 })
