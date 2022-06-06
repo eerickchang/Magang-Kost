@@ -1,4 +1,10 @@
-import {StyleSheet, Text, View, ScrollView} from 'react-native';
+import {
+  StyleSheet,
+  Text,
+  View,
+  ScrollView,
+  TouchableOpacity,
+} from 'react-native';
 import React from 'react';
 import {
   IconBackLeft,
@@ -12,14 +18,16 @@ import {
 } from '../../assets';
 import {Footer, Gap, TenantsProfile} from '../../components';
 
-const LanjutanViewPenyewa = () => {
+const LanjutanViewPenyewa = ({navigation}) => {
   return (
     <View style={styles.container}>
       <View style={styles.headerWrapper}>
         <MatahariKuning />
         <View style={styles.headerProfile}>
           <Gap width={28} />
-          <IconBackLeft />
+          <TouchableOpacity onPress={() => navigation.navigate('HomeOwner')}>
+            <IconBackLeft />
+          </TouchableOpacity>
           <Gap width={249} />
           <User />
         </View>

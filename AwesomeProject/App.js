@@ -6,7 +6,7 @@ import {HeaderSignUp, SelectUser, SignUp, SignUpOwner} from './src';
 const App = () => {
   return (
     <NavigationContainer>
-      <SignUp />
+      <Routers />
     </NavigationContainer>
   );
 };
