@@ -10,13 +10,21 @@ import {
   TextInput,
   Label,
   Button,
+  EditKost,
+  ListKost,
+  HomeNavigation,
+  UserNavigation,
+  ButtonEditDelete,
 } from './src';
 
 const App = () => {
   return (
-    <View>
+    <>
       <ViewDetails />
-    </View>
+      {/* <EditKost/> */}
+      {/* <ButtonEditDelete/> */}
+      {/* <ListKost/> */}
+    </>
   );
 };
 
