@@ -3,26 +3,30 @@ import React from 'react';
 import {BorderSelectUser, Gap} from '../../components';
 import {SelectOwner, SelectPenyewa} from '../../assets';
 
-const SelectUser = () => {
+const SelectUser = ({navigation}) => {
   return (
     <View style={styles.container}>
-      <Gap height={78} />
-      <Text style={styles.txt}>Hi there!</Text>
-      <Text style={styles.txt1}>Welcome.</Text>
-      <Gap height={17} />
-      <Text style={styles.txt2}>Please select user</Text>
-      <Gap height={16} />
-      <TouchableOpacity activeOpacity={0.5}>
-        <BorderSelectUser icons={<SelectPenyewa />} title="User" />
-      </TouchableOpacity>
-      <Gap height={24} />
-      <TouchableOpacity activeOpacity={0.5}>
-        <BorderSelectUser
-          icons={<SelectOwner />}
-          title="Owner"
-          backgroundColor="#8FFF00"
-        />
-      </TouchableOpacity>
+      <View style={styles.container2}>
+        <Gap height={78} />
+        <Text style={styles.txt}>Hi there!</Text>
+        <Text style={styles.txt1}>Welcome.</Text>
+        <Gap height={17} />
+        <Text style={styles.txt2}>Please select user</Text>
+        <Gap height={16} />
+        <TouchableOpacity
+          activeOpacity={0.5}
+          onPress={() => navigation.navigate('LoginUser')}>
+          <BorderSelectUser icons={<SelectPenyewa />} title="User" />
+        </TouchableOpacity>
+        <Gap height={24} />
+        <TouchableOpacity activeOpacity={0.5}>
+          <BorderSelectUser
+            icons={<SelectOwner />}
+            title="Owner"
+            backgroundColor="#8FFF00"
+          />
+        </TouchableOpacity>
+      </View>
     </View>
   );
 };
@@ -37,7 +41,8 @@ const styles = StyleSheet.create({
   },
   container: {
     backgroundColor: 'white',
-    marginLeft: 50,
+    height: 640,
+    width: 360,
   },
   txt1: {
     color: '#000000',
@@ -48,5 +53,8 @@ const styles = StyleSheet.create({
     color: '#000000',
     fontFamily: 'Poppins-Regular',
     fontSize: 14,
+  },
+  container2: {
+    marginLeft: 50,
   },
 });

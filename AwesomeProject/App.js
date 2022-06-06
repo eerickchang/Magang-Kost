@@ -1,36 +1,14 @@
-import {StyleSheet, View} from 'react-native';
-import React from 'react';
-
-import {
-  SelectUser,
-  SignIn,
-  SplashScreen,
-  SignUp,
-  ViewDetails,
-  TextInput,
-  Label,
-  Button,
-  AddOwner,
-  BorderSelectUser,
-  HomeOwner,
-  ContentHomeOwner,
-  User,
-  Footer,
-  LanjutanViewPenyewa,
-  TenantsProfile,
-  HeaderOwner,
-  ProfileUser,
-  ViewBookedOwner,
-} from './src';
+import * as React from 'react';
+import {NavigationContainer} from '@react-navigation/native';
+import Routers from './src/routers';
+import {SelectUser} from './src';
 
 const App = () => {
   return (
-    <View>
-      <LanjutanViewPenyewa />
-    </View>
+    <NavigationContainer>
+      <Routers />
+    </NavigationContainer>
   );
 };
 
 export default App;
-
-const styles = StyleSheet.create({});

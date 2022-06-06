@@ -26,7 +26,7 @@ const LanjutanViewPenyewa = () => {
         <Text style={styles.txt}>6 Tenants Available</Text>
       </View>
       <Gap height={10} />
-      <ScrollView style={styles.content}>
+      <ScrollView style={styles.content} showsVerticalScrollIndicator={false}>
         <Gap height={14} />
         <TenantsProfile
           name={'Andre Waani'}
