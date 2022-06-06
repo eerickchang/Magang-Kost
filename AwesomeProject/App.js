@@ -1,12 +1,12 @@
 import * as React from 'react';
 import {NavigationContainer} from '@react-navigation/native';
 import Routers from './src/routers';
-import {SelectUser} from './src';
+import {HeaderSignUp, SelectUser, SignUp, SignUpOwner} from './src';
 
 const App = () => {
   return (
     <NavigationContainer>
-      <Routers />
+      <SignUp />
     </NavigationContainer>
   );
 };
