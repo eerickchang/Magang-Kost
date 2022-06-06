@@ -1,4 +1,4 @@
-import {StyleSheet, Text, View} from 'react-native';
+import {StyleSheet, View} from 'react-native';
 import React from 'react';
 
 import {
@@ -15,6 +15,23 @@ import {
   HomeNavigation,
   UserNavigation,
   ButtonEditDelete,
+  SignUpOwner,
+  AddOwner,
+  BorderSelectUser,
+  HomeOwner,
+  ContentHomeOwner,
+  User,
+  Footer,
+  LanjutanViewPenyewa,
+  TenantsProfile,
+  HeaderOwner,
+  ProfileUser,
+  ViewBookedOwner,
+  ContentViewPenyewa,
+  LoginOwner,
+  HomePenyewa,
+  Home,
+  ViewPenyewa
 } from './src';
 
 const App = () => {
