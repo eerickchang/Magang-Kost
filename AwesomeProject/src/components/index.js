@@ -1,6 +1,8 @@
 import Button from './Button';
 import Label from './Label';
 import TextInput from './TextInput';
+import ListKost from './ListKost';
+import ButtonEditDelete from './ButtonEditDelete';
 import HeaderSignUp from './HeaderSignUp';
 import HeaderAddOwner from './HeaderAddOwner';
 import ContentAddOwner from './ContentAddOwner';
@@ -30,4 +32,6 @@ export {
   ContentViewPenyewa,
   ContentImageKost,
   HeaderSignUp,
+  ListKost,
+  ButtonEditDelete,
 };
