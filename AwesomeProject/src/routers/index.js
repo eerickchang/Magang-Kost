@@ -1,5 +1,6 @@
 import * as React from 'react';
 import {createNativeStackNavigator} from '@react-navigation/native-stack';
+import {createBottomTabNavigator} from '@react-navigation/bottom-tabs';
 import {
   SelectUser,
   LoginOwner,
@@ -13,23 +14,19 @@ import {
 } from '../pages';
 
 const Stack = createNativeStackNavigator();
+const Tab = createBottomTabNavigator();
 
 const Routers = () => {
   return (
     <Stack.Navigator>
-      {/* <Stack.Screen
-        name="SplashScreen"
-        component={SplashScreen}
-        options={{headerShown: false}}
-      /> */}
-      <Stack.Screen
-        name="LanjutanViewPenyewa"
-        component={LanjutanViewPenyewa}
-        options={{headerShown: false}}
-      />
       <Stack.Screen
         name="SelectUser"
         component={SelectUser}
+        options={{headerShown: false}}
+      />
+      <Stack.Screen
+        name="LanjutanViewPenyewa"
+        component={LanjutanViewPenyewa}
         options={{headerShown: false}}
       />
       <Stack.Screen
@@ -67,3 +64,12 @@ const Routers = () => {
 };
 
 export default Routers;
+
+export function TabFooterUser() {
+  return (
+    <Tab.Navigator>
+      <Tab.Screen name="HomePenyewa" component={HomePenyewa} />
+      <Tab.Screen name="ProfileUser" component={ProfileUser} />
+    </Tab.Navigator>
+  );
+}
