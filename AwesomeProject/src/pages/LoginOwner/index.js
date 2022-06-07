@@ -3,7 +3,7 @@ import React from 'react';
 import {Gap, TextInput} from '../../components';
 import {LogoKecil} from '../../assets';
 
-const LoginOwner = () => {
+const LoginOwner = ({navigation}) => {
   return (
     <View
       style={{
@@ -32,14 +32,21 @@ const LoginOwner = () => {
       </View>
 
       <Gap height={51} />
-      <TouchableOpacity style={styles.Button}>
+      <TouchableOpacity
+        style={styles.Button}
+        activeOpacity={0.5}
+        onPress={() => navigation.navigate('HomeOwner')}>
         <Text style={styles.textLog}>Login</Text>
       </TouchableOpacity>
 
       <Gap height={39} />
       <View style={styles.Signin}>
         <Text style={styles.txtSignin}>don't have an account? </Text>
-        <Text style={styles.txtSigninBold}> sign in</Text>
+        <TouchableOpacity
+          activeOpacity={0.5}
+          onPress={() => navigation.navigate('SignUpOwner')}>
+          <Text style={styles.txtSigninBold}>sign Up</Text>
+        </TouchableOpacity>
       </View>
       <View style={{backgroundColor: '#fff', height: 81}} />
     </View>

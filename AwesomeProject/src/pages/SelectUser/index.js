@@ -19,7 +19,9 @@ const SelectUser = ({navigation}) => {
           <BorderSelectUser icons={<SelectPenyewa />} title="User" />
         </TouchableOpacity>
         <Gap height={24} />
-        <TouchableOpacity activeOpacity={0.5}>
+        <TouchableOpacity
+          activeOpacity={0.5}
+          onPress={() => navigation.navigate('LoginOwner')}>
           <BorderSelectUser
             icons={<SelectOwner />}
             title="Owner"
