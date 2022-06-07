@@ -36,7 +36,8 @@ const App = () => {
       {/* <SplashScreen /> */}
 
       {/* <TenantsProfile /> */}
-      <ViewBookedOwner />
+      {/* <ViewBookedOwner /> */}
+      <AddOwner />
       {/* <HomePenyewa /> */}
     </View>
   );
