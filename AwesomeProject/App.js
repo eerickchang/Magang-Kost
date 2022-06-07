@@ -31,7 +31,9 @@ import {
   LoginOwner,
   HomePenyewa,
   Home,
-  ViewPenyewa
+  ViewPenyewarr,
+  ContentHomePenyewa,
+  ContentImageKost
 } from './src';
 
 const App = () => {
@@ -41,6 +43,7 @@ const App = () => {
       {/* <EditKost/> */}
       {/* <ButtonEditDelete/> */}
       {/* <ListKost/> */}
+      {/* <ContentImageKost/> */}
     </>
   );
 };

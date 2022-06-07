@@ -32,10 +32,10 @@ const ViewDetails = () => {
     {image: require('../../assets/pictures/g6.jpg')},
   ]);
   return (
-    <View>
+    <View style={{backgroundColor: 'white'}}>
       <ScrollView showsVerticalScrollIndicator={false}>
         <View style={styles.container}>
-          <TouchableOpacity>
+          <TouchableOpacity activeOpacity={0.6}>
             <IconBackLeft />
           </TouchableOpacity>
         </View>
@@ -104,7 +104,7 @@ const ViewDetails = () => {
           </Text>
         </View>
         <View style={styles.viewButtonBooking}>
-          <TouchableOpacity style={styles.buttonBooking}>
+          <TouchableOpacity style={styles.buttonBooking} activeOpacity={0.8}>
             <Text style={styles.txtButton}>Booking</Text>
           </TouchableOpacity>
         </View>
@@ -250,9 +250,8 @@ const styles = StyleSheet.create({
   },
   buttonBooking: {
     width: 292,
-    height: 49,
+    height: 46,
     borderRadius: 8,
-    shadowRadius: 3,
     backgroundColor: '#000000',
     justifyContent: 'center',
     alignItems: 'center',
