@@ -11,6 +11,18 @@ import Tenants4 from './Tenants4.svg';
 import Tenants5 from './Tenants5.svg';
 import LocationBlank from './LocationBlank.svg';
 import Job from './Job.svg';
+import ImgBlurEditKost from './ImgBlurEditKost.svg';
+import ImgEditKost from './ImgEditKost';
+import Call from './Call.svg';
+import Category from './Category.svg';
+import Document from './Document.svg';
+import Location from './Location.svg';
+import RootServer from './RootServer.svg';
+import Ticket from './Ticket.svg';
+import Cost from './Cost.svg';
+import Pencil from './Pencil.svg';
+import AddImage from './AddImage.svg';
+
 
 export {
   IconBackLeft,
@@ -26,4 +38,15 @@ export {
   MatahariKuning,
   LocationBlank,
   Job,
+  ImgBlurEditKost,
+  ImgEditKost,
+  Call,
+  Category,
+  Document,
+  Location,
+  RootServer,
+  Ticket,
+  Cost,
+  Pencil,
+  AddImage,
 };

@@ -18,14 +18,18 @@ import {
   LanjutanViewPenyewa,
   TenantsProfile,
   HeaderOwner,
+  LanjutanEditKost,
+  KontenTextInput,
+  TextInputEditKost,
 } from './src';
 
 
 const App = () => {
   return (
     <View>
-      <HomeOwner />
-      {/* <TenantsProfile /> */}
+      <LanjutanEditKost/>
+      {/* <KontenTextInput/> */}
+      {/* <TextInputEditKost/> */}
     </View>
   );
 };
