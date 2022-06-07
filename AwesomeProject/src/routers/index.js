@@ -16,7 +16,12 @@ import {
   LanjutanViewPenyewa,
   ViewBookedOwner,
   ViewDetails,
+<<<<<<< HEAD
 >>>>>>> refs/remotes/origin/Iterasi_1
+=======
+  ProfilOwner,
+  EditKost,
+>>>>>>> 8f6a592fab948f11a8bfe8d986dbc031cb58e9e1
 } from '../pages';
 
 const Stack = createNativeStackNavigator();
@@ -29,6 +34,11 @@ const Routers = () => {
         component={SplashScreen}
         options={{headerShown: false}}
       /> */}
+      <Stack.Screen
+        name="ProfilOwner"
+        component={ProfilOwner}
+        options={{headerShown: false}}
+      />
       <Stack.Screen
         name="HomePenyewa"
         component={HomePenyewa}
@@ -85,6 +95,11 @@ const Routers = () => {
         name="ViewDetails"
         component={ViewDetails}
 >>>>>>> refs/remotes/origin/Iterasi_1
+        options={{headerShown: false}}
+      />
+      <Stack.Screen
+        name="EditKost"
+        component={EditKost}
         options={{headerShown: false}}
       />
     </Stack.Navigator>
