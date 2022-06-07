@@ -10,7 +10,11 @@ import {ImageHome1, ImageHome2, ImageHome3} from '../../assets';
 import Gap from '../Gap';
 import ContentImageKost from '../ContentImageKost';
 
-const ContentHomePenyewa = ({suggest}) => {
+const ContentHomePenyewa = ({
+  suggest,
+  onPressDetailPrinceton,
+  onPressKostPopular,
+}) => {
   return (
     <View style={styles.container}>
       <Text style={styles.txt}>{suggest}</Text>
@@ -18,7 +22,11 @@ const ContentHomePenyewa = ({suggest}) => {
       <View style={styles.content}>
         <View style={{flexDirection: 'row'}}>
           <ScrollView style={{height: 300}} horizontal>
-            <ContentImageKost image={<ImageHome1 />} kost={'Kost Princeton'} />
+            <ContentImageKost
+              image={<ImageHome1 />}
+              kost={'Kost Princeton'}
+              onPress={onPressKostPopular}
+            />
             <Gap width={15} />
             <ContentImageKost image={<ImageHome2 />} kost={'Kost Tantaton'} />
             <Gap width={15} />
@@ -32,7 +40,10 @@ const ContentHomePenyewa = ({suggest}) => {
           </ScrollView>
         </View>
       </View>
-      <TouchableOpacity activeOpacity={0.8} style={styles.btn}>
+      <TouchableOpacity
+        activeOpacity={0.8}
+        style={styles.btn}
+        onPress={onPressDetailPrinceton}>
         <Text style={styles.txtBtn}>View</Text>
       </TouchableOpacity>
     </View>
