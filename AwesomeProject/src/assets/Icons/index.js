@@ -1,10 +1,6 @@
 import PencilEdit from './PencilEdit.svg';
 import AddImage from './AddImage.svg';
-<<<<<<< HEAD
-
-=======
 import IconBack from './Back.svg';
->>>>>>> refs/remotes/origin/Iterasi_1
 import User from './User.svg';
 import IconBackLeft from './IconBackLeft.svg';
 import SelectPenyewa from './SelectPenyewa.svg';
