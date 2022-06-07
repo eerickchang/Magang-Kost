@@ -3,7 +3,7 @@ import React from 'react';
 import {SearchHome} from '../../assets';
 import Gap from '../Gap';
 
-const SearchHomePenyewa = () => {
+const SearchHomePenyewa = ({navigation}) => {
   return (
     <View style={styles.search}>
       <SearchHome />

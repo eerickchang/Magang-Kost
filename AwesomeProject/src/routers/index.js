@@ -10,6 +10,8 @@ import {
   SignUp,
   SignUpOwner,
   LanjutanViewPenyewa,
+  ViewBookedOwner,
+  ViewDetails,
 } from '../pages';
 
 const Stack = createNativeStackNavigator();
@@ -22,6 +24,16 @@ const Routers = () => {
         component={SplashScreen}
         options={{headerShown: false}}
       /> */}
+      <Stack.Screen
+        name="HomePenyewa"
+        component={HomePenyewa}
+        options={{headerShown: false}}
+      />
+      <Stack.Screen
+        name="ViewBookedOwner"
+        component={ViewBookedOwner}
+        options={{headerShown: false}}
+      />
       <Stack.Screen
         name="LanjutanViewPenyewa"
         component={LanjutanViewPenyewa}
@@ -48,11 +60,6 @@ const Routers = () => {
         options={{headerShown: false}}
       />
       <Stack.Screen
-        name="HomePenyewa"
-        component={HomePenyewa}
-        options={{headerShown: false}}
-      />
-      <Stack.Screen
         name="SignUp"
         component={SignUp}
         options={{headerShown: false}}
@@ -60,6 +67,11 @@ const Routers = () => {
       <Stack.Screen
         name="SignUpOwner"
         component={SignUpOwner}
+        options={{headerShown: false}}
+      />
+      <Stack.Screen
+        name="ViewDetails"
+        component={ViewDetails}
         options={{headerShown: false}}
       />
     </Stack.Navigator>
