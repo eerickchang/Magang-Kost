@@ -6,7 +6,7 @@ const AddOwner = ({navigation}) => {
   return (
     <View style={styles.container}>
       {/* <HeaderAddOwner onPressBack={() => navigation.navigate('HomeOwner')} /> */}
-      <HeaderOwner onPressBack={() => navigation.navigate('HomeOwner')} />
+      <HeaderOwner onPress={() => navigation.navigate('HomeOwner')} />
       <ContentAddOwner onPress={() => navigation.navigate('ViewPenyewa')} />
       {/* <FooterContoh /> */}
     </View>
