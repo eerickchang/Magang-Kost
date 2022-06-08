@@ -29,7 +29,7 @@ const HomeOwner = ({navigation}) => {
           title={'View Book'}
           subTitle={'3 Rooms has been booked'}
           buton={'View'}
-          onPressViewBooked={() => navigation.navigate('AddOwner')}
+          onPress={() => navigation.navigate('ViewBookedOwner')}
         />
         <Gap height={20} />
         <ContentHomeOwner
@@ -37,7 +37,7 @@ const HomeOwner = ({navigation}) => {
           title={'View Tenant'}
           subTitle={'there are 3 tenants'}
           buton={'View'}
-          onPressViewPenyewa={() => navigation.navigate('ViewPenyewa')}
+          onPress={() => navigation.navigate('ViewPenyewa')}
         />
       </View>
     </View>

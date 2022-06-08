@@ -1,6 +1,7 @@
 import {StyleSheet, Text, View, TouchableOpacity} from 'react-native';
 import React from 'react';
 
+<<<<<<< HEAD
 const ContentHomeOwner = ({
   backgroundColor,
   buton,
@@ -8,6 +9,9 @@ const ContentHomeOwner = ({
   subTitle,
   onPress,
 }) => {
+=======
+const ContentHomeOwner = ({backgroundColor, buton, title, subTitle, onPress}) => {
+>>>>>>> refs/remotes/origin/Iterasi_1
   return (
     <View>
       <View style={styles.kotak1(backgroundColor)}>

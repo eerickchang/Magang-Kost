@@ -12,6 +12,9 @@ import ContentHomeOwner from './ContentHomeOwner';
 import BorderSelectUser from './BorderSelectUser';
 import TenantsProfile from './TenantsProfile';
 import HeaderOwner from './HeaderOwner';
+import KontenTextInput from './KontenTextInput';
+import TextInputEditKost from './TextInputEditKost';
+import ButtonLanjutanEditKost from './ButtonLanjutanEditKost';
 import ContentViewBookedOwner from './ContentViewBookedOwn';
 import Footer from './Footer';
 import ContentImageKost from './ContentImageKost';
@@ -29,6 +32,9 @@ export {
   HeaderOwner,
   ContentViewBookedOwner,
   ContentHomeOwner,
+  KontenTextInput,
+  TextInputEditKost,
+  ButtonLanjutanEditKost,
   HeaderAddOwner,
   ContentAddOwner,
   ContentViewPenyewa,

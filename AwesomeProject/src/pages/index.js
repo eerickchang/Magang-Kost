@@ -13,6 +13,7 @@ import ProfilOwner from './ProfilOwner';
 import HomeOwner from './HomeOwner';
 import LanjutanViewPenyewa from './LanjutanViewPenyewa';
 import ViewBookedOwner from './ViewBookedOwner';
+import LanjutanEditKost from './LanjutanEditKost';
 import ProfileUser from './ProfileUser';
 import HomePenyewa from './HomePenyewa';
 import ContentHomePenyewa from '../components/ContentHomePenyewa';
@@ -28,6 +29,7 @@ export {
   ViewDetails,
   LanjutanViewPenyewa,
   ViewBookedOwner,
+  LanjutanEditKost,
   ProfileUser,
   AddOwner,
   HomePenyewa,

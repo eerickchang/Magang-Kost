@@ -12,6 +12,7 @@ import {
   LanjutanViewPenyewa,
   AddOwner,
   ViewPenyewa,
+  LanjutanEditKost,
   ViewBookedOwner,
   ViewDetails,
   ProfilOwner,
@@ -72,6 +73,26 @@ const Routers = () => {
       <Stack.Screen
         name="SignUpOwner"
         component={SignUpOwner}
+        options={{headerShown: false}}
+      />
+      <Stack.Screen
+        name="AddOwner"
+        component={AddOwner}
+        options={{headerShown: false}}
+      />
+      <Stack.Screen
+        name="ViewBookedOwner"
+        component={ViewBookedOwner}
+        options={{headerShown: false}}
+      />
+      <Stack.Screen
+        name="ViewPenyewa"
+        component={ViewPenyewa}
+        options={{headerShown: false}}
+      />
+      <Stack.Screen
+        name="LanjutanEditKost"
+        component={LanjutanEditKost}
         options={{headerShown: false}}
       />
       <Stack.Screen
