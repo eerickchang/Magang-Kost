@@ -25,7 +25,7 @@ const LanjutanViewPenyewa = ({navigation}) => {
         <MatahariKuning />
         <View style={styles.headerProfile}>
           <Gap width={28} />
-          <TouchableOpacity onPress={() => navigation.navigate('HomeOwner')}>
+          <TouchableOpacity onPress={() => navigation.navigate('ViewPenyewa')}>
             <IconBackLeft />
           </TouchableOpacity>
           <Gap width={249} />

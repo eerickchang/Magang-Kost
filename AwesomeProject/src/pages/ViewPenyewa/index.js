@@ -2,10 +2,10 @@ import {StyleSheet, Text, View} from 'react-native';
 import React from 'react';
 import {
   ContentViewPenyewa,
-  Footer,
   Gap,
   HeaderAddOwner,
   HeaderOwner,
+  Footer,
 } from '../../components';
 
 const ViewPenyewa = ({navigation}) => {
@@ -20,13 +20,13 @@ const ViewPenyewa = ({navigation}) => {
       </View>
 
       <Gap height={17} />
-
       {/* Content */}
-      <ContentViewPenyewa />
+      <ContentViewPenyewa
+        onPress={() => navigation.navigate('LanjutanViewPenyewa')}
+      />
 
-      <Gap height={35} />
       {/* Footer */}
-      <Footer />
+      {/* <Footer /> */}
     </View>
   );
 };

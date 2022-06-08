@@ -59,6 +59,11 @@ const Routers = () => {
         options={{headerShown: false}}
       />
       <Stack.Screen
+        name="HomeOwner"
+        component={HomeOwner}
+        options={{headerShown: false}}
+      />
+      <Stack.Screen
         name="ViewBookedOwner"
         component={ViewBookedOwner}
         options={{headerShown: false}}
@@ -106,6 +111,11 @@ const Routers = () => {
       <Stack.Screen
         name="ViewPenyewa"
         component={ViewPenyewa}
+        options={{headerShown: false}}
+      />
+      <Stack.Screen
+        name="AddOwner"
+        component={AddOwner}
         options={{headerShown: false}}
       />
     </Stack.Navigator>
