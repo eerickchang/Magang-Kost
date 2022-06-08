@@ -1,10 +1,10 @@
 import { StyleSheet, Text, View } from 'react-native'
 import React from 'react'
 
-const ButtonOwner = () => {
+const ButtonOwner = ({backgroundColor,title,fontColor}) => {
   return (
-    <View style={styles.container} >
-      <Text style={styles.txt}>Logout</Text>
+    <View style={styles.container(backgroundColor)} >
+      <Text style={styles.txt(fontColor)}>{title}</Text>
     </View>
   )
 }
@@ -12,18 +12,17 @@ const ButtonOwner = () => {
 export default ButtonOwner
 
 const styles = StyleSheet.create({
-    container: {
+    container: (backgroundColor) => ({
         width: 261,
         height: 49,
-        backgroundColor: '#FFC700',
+        backgroundColor: backgroundColor,
         borderRadius: 8,
         justifyContent: 'center',
         alignItems: 'center'
         
-    },
-    txt: {
-        color: '#000000',
-        fontSize: 18,
+    }),
+    txt:(fontColor) => ({
+        color:fontColor,
         fontFamily: 'Poppins-Bold',       
-  }  
+  })  
 })

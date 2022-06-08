@@ -5,13 +5,18 @@ import {
   LoginOwner,
   SplashScreen,
   LoginUser,
+  SignUpOwner,
   HomeOwner,
   HomePenyewa,
   SignUp,
-  SignUpOwner,
   LanjutanViewPenyewa,
+  AddOwner,
+  ViewPenyewa,
+  LanjutanEditKost,
   ViewBookedOwner,
   ViewDetails,
+  ProfilOwner,
+  EditKost,
 } from '../pages';
 import {HomeNav, UserNav} from '../assets';
 
@@ -20,11 +25,16 @@ const Stack = createNativeStackNavigator();
 const Routers = () => {
   return (
     <Stack.Navigator>
-      {/* <Stack.Screen
+      <Stack.Screen
         name="SplashScreen"
         component={SplashScreen}
         options={{headerShown: false}}
-      /> */}
+      />
+      <Stack.Screen
+        name="ProfilOwner"
+        component={ProfilOwner}
+        options={{headerShown: false}}
+      />
       <Stack.Screen
         name="HomePenyewa"
         component={HomePenyewa}
@@ -55,11 +65,7 @@ const Routers = () => {
         component={LoginOwner}
         options={{headerShown: false}}
       />
-      <Stack.Screen
-        name="HomeOwner"
-        component={HomeOwner}
-        options={{headerShown: false}}
-      />
+
       <Stack.Screen
         name="SignUp"
         component={SignUp}
@@ -71,8 +77,48 @@ const Routers = () => {
         options={{headerShown: false}}
       />
       <Stack.Screen
+        name="AddOwner"
+        component={AddOwner}
+        options={{headerShown: false}}
+      />
+      <Stack.Screen
+        name="ViewBookedOwner"
+        component={ViewBookedOwner}
+        options={{headerShown: false}}
+      />
+      <Stack.Screen
+        name="ViewPenyewa"
+        component={ViewPenyewa}
+        options={{headerShown: false}}
+      />
+      <Stack.Screen
+        name="LanjutanEditKost"
+        component={LanjutanEditKost}
+        options={{headerShown: false}}
+      />
+      <Stack.Screen
+        name="HomeOwner"
+        component={HomeOwner}
+        options={{headerShown: false}}
+      />
+      <Stack.Screen
         name="ViewDetails"
         component={ViewDetails}
+        options={{headerShown: false}}
+      />
+      <Stack.Screen
+        name="EditKost"
+        component={EditKost}
+        options={{headerShown: false}}
+      />
+      <Stack.Screen
+        name="AddOwner"
+        component={AddOwner}
+        options={{headerShown: false}}
+      />
+      <Stack.Screen
+        name="ViewPenyewa"
+        component={ViewPenyewa}
         options={{headerShown: false}}
       />
     </Stack.Navigator>
