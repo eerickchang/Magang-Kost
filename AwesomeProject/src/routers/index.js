@@ -5,15 +5,17 @@ import {
   LoginOwner,
   SplashScreen,
   LoginUser,
+  SignUpOwner,
   HomeOwner,
   HomePenyewa,
   SignUp,
-  SignUpOwner,
   LanjutanViewPenyewa,
   AddOwner,
-  ViewBookedOwner,
   ViewPenyewa,
   LanjutanEditKost,
+  ViewBookedOwner,
+  ViewDetails,
+  ProfilOwner,
   EditKost,
 } from '../pages';
 
@@ -25,6 +27,21 @@ const Routers = () => {
       <Stack.Screen
         name="SplashScreen"
         component={SplashScreen}
+        options={{headerShown: false}}
+      />
+      <Stack.Screen
+        name="ProfilOwner"
+        component={ProfilOwner}
+        options={{headerShown: false}}
+      />
+      <Stack.Screen
+        name="HomePenyewa"
+        component={HomePenyewa}
+        options={{headerShown: false}}
+      />
+      <Stack.Screen
+        name="ViewBookedOwner"
+        component={ViewBookedOwner}
         options={{headerShown: false}}
       />
       <Stack.Screen
@@ -47,16 +64,7 @@ const Routers = () => {
         component={LoginOwner}
         options={{headerShown: false}}
       />
-      <Stack.Screen
-        name="HomeOwner"
-        component={HomeOwner}
-        options={{headerShown: false}}
-      />
-      <Stack.Screen
-        name="HomePenyewa"
-        component={HomePenyewa}
-        options={{headerShown: false}}
-      />
+    
       <Stack.Screen
         name="SignUp"
         component={SignUp}
@@ -85,6 +93,15 @@ const Routers = () => {
       <Stack.Screen
         name="LanjutanEditKost"
         component={LanjutanEditKost}
+        options={{headerShown: false}}
+        />
+      <Stack.Screen
+        name="HomeOwner"
+        component={HomeOwner}
+        options={{headerShown: false}}/>
+        <Stack.Screen
+        name="ViewDetails"
+        component={ViewDetails}
         options={{headerShown: false}}
       />
       <Stack.Screen

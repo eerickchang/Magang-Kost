@@ -8,10 +8,10 @@ import {
 } from '../../components';
 import {Homestay1, Homestay2, Homestay3} from '../../assets';
 
-const ViewBookedOwner = () => {
+const ViewBookedOwner = ({navigation}) => {
   return (
     <View>
-      <HeaderOwner />
+      <HeaderOwner onPress={() => navigation.navigate('HomeOwner')} />
       <View style={styles.containerWait}>
         <Text style={styles.txtWait}>Waiting for approval</Text>
         <View style={styles.contBooked}>
