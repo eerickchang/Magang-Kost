@@ -5,23 +5,15 @@ import {
   LoginOwner,
   SplashScreen,
   LoginUser,
-<<<<<<< HEAD
   SignUpOwner,
-  HomeOwner,
-=======
   HomeOwner,
   HomePenyewa,
   SignUp,
-  SignUpOwner,
   LanjutanViewPenyewa,
   ViewBookedOwner,
   ViewDetails,
-<<<<<<< HEAD
->>>>>>> refs/remotes/origin/Iterasi_1
-=======
   ProfilOwner,
   EditKost,
->>>>>>> 8f6a592fab948f11a8bfe8d986dbc031cb58e9e1
 } from '../pages';
 
 const Stack = createNativeStackNavigator();
@@ -29,11 +21,11 @@ const Stack = createNativeStackNavigator();
 const Routers = () => {
   return (
     <Stack.Navigator>
-      {/* <Stack.Screen
+      <Stack.Screen
         name="SplashScreen"
         component={SplashScreen}
         options={{headerShown: false}}
-      /> */}
+      />
       <Stack.Screen
         name="ProfilOwner"
         component={ProfilOwner}
@@ -70,8 +62,6 @@ const Routers = () => {
         options={{headerShown: false}}
       />
       <Stack.Screen
-<<<<<<< HEAD
-=======
         name="HomeOwner"
         component={HomeOwner}
         options={{headerShown: false}}
@@ -82,19 +72,13 @@ const Routers = () => {
         options={{headerShown: false}}
       />
       <Stack.Screen
->>>>>>> refs/remotes/origin/Iterasi_1
         name="SignUpOwner"
         component={SignUpOwner}
         options={{headerShown: false}}
       />
       <Stack.Screen
-<<<<<<< HEAD
-        name="HomeOwner"
-        component={HomeOwner}
-=======
         name="ViewDetails"
         component={ViewDetails}
->>>>>>> refs/remotes/origin/Iterasi_1
         options={{headerShown: false}}
       />
       <Stack.Screen
