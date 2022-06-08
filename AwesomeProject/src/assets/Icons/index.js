@@ -49,6 +49,8 @@ import ImageHome1 from './ImageHome1.svg';
 import ImageHome2 from './ImageHome2.svg';
 import ImageHome3 from './ImageHome3.svg';
 import UserProfilOwner from './UserProfilOwner.svg';
+import Popular1 from './Popular1.svg'
+import Popular2 from './Popular2.svg'
 
 export {
   IconBackLeft,
@@ -90,5 +92,8 @@ export {
   ImageHome1,
   ImageHome2,
   ImageHome3,
-  Available, Description, Location, Price, Size, Star, Telephone, Type, UserIconSmall, UserNavigation, HomeNavigation
+  Available, Description, Location, Price, Size, Star, Telephone, Type, UserIconSmall, UserNavigation, HomeNavigation,
+  Popular1,
+  Popular2,
+  
 };

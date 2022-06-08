@@ -15,6 +15,10 @@ import ContentViewBookedOwner from './ContentViewBookedOwn';
 import Footer from './Footer';
 import ContentImageKost from './ContentImageKost';
 import HeaderSignUp from './HeaderSignUp';
+import ContenKostPopular from './ContentKostPopular';
+import SearchKostPopular from './SearchKostPopular';
+import ContentImgPopular from './ContentImgPopular';
+import StarContent from './StarContent';
 
 export {
   Button,
@@ -34,4 +38,9 @@ export {
   ListKost,
   ButtonEditDelete,
   HeaderSignUp,
+  ContenKostPopular,
+  SearchKostPopular,
+  ContentImgPopular,
+  StarContent,
+
 };

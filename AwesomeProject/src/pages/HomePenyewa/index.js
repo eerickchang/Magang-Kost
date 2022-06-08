@@ -11,7 +11,7 @@ const HomePenyewa = ({navigation}) => {
       <ScrollView style={{height: 500}}>
         <ContentHomePenyewa
           suggest={'Kost Popular'}
-          onPressDetailPrinceton={() => navigation.navigate('ViewDetails')}
+          onPressDetailPrinceton={() => navigation.navigate('PopularKost')}
         />
         <ContentHomePenyewa
           suggest={'Kost Bisae'}

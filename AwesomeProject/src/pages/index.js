@@ -15,6 +15,7 @@ import HomePenyewa from './HomePenyewa';
 import ContentHomePenyewa from '../components/ContentHomePenyewa';
 import LoginUser from './LoginUser';
 import ViewPenyewa from './ViewPenyewa';
+import PopularKost from './PopularKost';
 
 export {
   SelectUser,
@@ -34,4 +35,5 @@ export {
   SignUpOwner,
   EditKost,
   ViewPenyewa,
+  PopularKost,
 };

@@ -12,6 +12,8 @@ import {
   LanjutanViewPenyewa,
   ViewBookedOwner,
   ViewDetails,
+  PopularKost,
+  ContentKostPopular,
 } from '../pages';
 
 const Stack = createNativeStackNavigator();
@@ -74,6 +76,12 @@ const Routers = () => {
         component={ViewDetails}
         options={{headerShown: false}}
       />
+       <Stack.Screen
+        name="PopularKost"
+        component={PopularKost}
+        options={{headerShown: false}}
+      />
+
     </Stack.Navigator>
   );
 };
