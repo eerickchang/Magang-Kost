@@ -10,11 +10,15 @@ import {
   HomePenyewa,
   SignUp,
   LanjutanViewPenyewa,
+  AddOwner,
+  ViewPenyewa,
+  LanjutanEditKost,
   ViewBookedOwner,
   ViewDetails,
   ProfilOwner,
   EditKost,
 } from '../pages';
+import {HomeNav, UserNav} from '../assets';
 
 const Stack = createNativeStackNavigator();
 
@@ -34,11 +38,6 @@ const Routers = () => {
       <Stack.Screen
         name="HomePenyewa"
         component={HomePenyewa}
-        options={{headerShown: false}}
-      />
-      <Stack.Screen
-        name="ViewBookedOwner"
-        component={ViewBookedOwner}
         options={{headerShown: false}}
       />
       <Stack.Screen
@@ -66,6 +65,7 @@ const Routers = () => {
         component={HomeOwner}
         options={{headerShown: false}}
       />
+
       <Stack.Screen
         name="SignUp"
         component={SignUp}
@@ -84,6 +84,12 @@ const Routers = () => {
       <Stack.Screen
         name="EditKost"
         component={EditKost}
+        options={{headerShown: false}}
+      />
+
+      <Stack.Screen
+        name="ViewPenyewa"
+        component={ViewPenyewa}
         options={{headerShown: false}}
       />
     </Stack.Navigator>
