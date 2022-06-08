@@ -7,12 +7,12 @@ import {Footer} from '../../components';
 const HomePenyewa = () => {
   return (
     <View>
-      <ScrollView style={{height: 576}}>
-        <SearchHomePenyewa />
-        <ContentHomePenyewa />
-        <ContentHomePenyewa />
-        <ContentHomePenyewa />
-        <ContentHomePenyewa />
+      <SearchHomePenyewa />
+      <ScrollView style={{height: 500}}>
+        <ContentHomePenyewa suggest={'Kost Rekomendasi'} />
+        <ContentHomePenyewa suggest={'Kost Bisae'} />
+        <ContentHomePenyewa suggest={'Kost Top'} />
+        <ContentHomePenyewa suggest={'Kost Afordabel'} />
       </ScrollView>
       <Footer />
     </View>

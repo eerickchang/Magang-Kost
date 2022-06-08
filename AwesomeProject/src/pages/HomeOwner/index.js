@@ -3,15 +3,14 @@ import React from 'react';
 import {ContentHomeOwner, Gap} from '../../components';
 import {User} from '../../assets';
 
-const HomeOwner = () => {
+const HomeOwner = ({navigation}) => {
   return (
     <View style={styles.container}>
       <View style={styles.header}>
         <View style={styles.subHeader}>
-        <Text style={styles.greeting}>Hi George,</Text>
-        
-        <Text style={styles.greeting2}>Welcome Back!</Text>
-        
+          <Text style={styles.greeting}>Hi George,</Text>
+
+          <Text style={styles.greeting2}>Welcome Back!</Text>
         </View>
         <User style={styles.userIcon} />
       </View>
@@ -22,6 +21,7 @@ const HomeOwner = () => {
           title={'Add Kost'}
           subTitle={'Already have 2 Kost'}
           buton={'Add'}
+          onPress={() => navigation.navigate('AddOwner')}
         />
         <Gap height={20} />
         <ContentHomeOwner
@@ -48,11 +48,9 @@ const styles = StyleSheet.create({
   header: {
     flexDirection: 'row',
   },
-  subHeader: {
-
-  },
-  userIcon:{
-    marginTop:50,
+  subHeader: {},
+  userIcon: {
+    marginTop: 50,
     marginLeft: 102,
   },
   greeting: {

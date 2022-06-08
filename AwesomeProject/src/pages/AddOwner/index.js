@@ -1,12 +1,12 @@
 import {StyleSheet, View, ScrollView} from 'react-native';
 import React from 'react';
-import {ContentAddOwner, HeaderAddOwner} from '../../components';
+import {ContentAddOwner, HeaderAddOwner, HeaderOwner} from '../../components';
 
 const AddOwner = ({navigation}) => {
   return (
     <View style={styles.container}>
-      <HeaderAddOwner />
-      {/* <HeaderOwner /> */}
+      {/* <HeaderAddOwner onPressBack={() => navigation.navigate('HomeOwner')} /> */}
+      <HeaderOwner onPressBack={() => navigation.navigate('HomeOwner')} />
       <ContentAddOwner onPress={() => navigation.navigate('ViewPenyewa')} />
       {/* <FooterContoh /> */}
     </View>

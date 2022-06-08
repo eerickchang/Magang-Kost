@@ -29,6 +29,7 @@ const ContentAddOwner = ({onPress}) => {
       setHasPhoto(true);
     }
   };
+
   return (
     <ScrollView>
       <View style={styles.container}>

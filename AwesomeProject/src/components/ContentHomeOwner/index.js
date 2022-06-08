@@ -1,14 +1,20 @@
 import {StyleSheet, Text, View, TouchableOpacity} from 'react-native';
 import React from 'react';
 
-const ContentHomeOwner = ({backgroundColor, buton, title, subTitle}) => {
+const ContentHomeOwner = ({
+  backgroundColor,
+  buton,
+  title,
+  subTitle,
+  onPress,
+}) => {
   return (
     <View>
       <View style={styles.kotak1(backgroundColor)}>
         <Text style={styles.TitleKotak1}>{title}</Text>
         <Text style={styles.isiKotak1}>{subTitle}</Text>
         <View style={styles.btnadd1}></View>
-        <TouchableOpacity style={styles.container}>
+        <TouchableOpacity style={styles.container} onPress={onPress}>
           <Text style={styles.txt}>{buton}</Text>
         </TouchableOpacity>
       </View>

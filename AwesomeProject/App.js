@@ -1,6 +1,7 @@
 import * as React from 'react';
-import { NavigationContainer } from '@react-navigation/native';
-import Routers from './src/pages/routers';
+import {NavigationContainer} from '@react-navigation/native';
+import {AddOwner} from './src';
+import Routers from './src/routers';
 
 const App = () => {
   return (

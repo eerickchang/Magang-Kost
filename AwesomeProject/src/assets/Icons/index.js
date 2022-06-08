@@ -1,8 +1,20 @@
+// import Logo from './Logo.svg';
 import PencilEdit from './PencilEdit.svg';
 import AddImage from './AddImage.svg';
 import IconBack from './Back.svg';
 import User from './User.svg';
 import IconBackLeft from './IconBackLeft.svg';
+import Available from './Available.svg';
+import Description from './Description.svg';
+import Location from './Location.svg';
+import Price from './Price.svg';
+import Size from './Size.svg';
+import Star from './Star.svg';
+import Telephone from './Telephone.svg';
+import Type from './Type.svg';
+import UserIconSmall from './UserIcon.svg';
+import UserNavigation from './User Navigation.svg';
+import HomeNavigation from './HomeNavigation.svg';
 import SelectPenyewa from './SelectPenyewa.svg';
 import SelectOwner from './SelectOwner.svg';
 import Home from './Home.svg';
@@ -78,4 +90,5 @@ export {
   ImageHome1,
   ImageHome2,
   ImageHome3,
+  Available, Description, Location, Price, Size, Star, Telephone, Type, UserIconSmall, UserNavigation, HomeNavigation
 };

@@ -1,15 +1,15 @@
-import {StyleSheet, Text, View} from 'react-native';
+import {StyleSheet, Text, View, TouchableOpacity} from 'react-native';
 import React from 'react';
 
-const ContentImageKost = ({image}) => {
+const ContentImageKost = ({image, kost}) => {
   return (
-    <View>
+    <TouchableOpacity activeOpacity={0.8}>
       {image}
-      <View style={styles.contImage}>
-        <Text style={styles.txtTitle}>Kost Princeton</Text>
+      <TouchableOpacity activeOpacity={0.8} style={styles.contImage}>
+        <Text style={styles.txtTitle}>{kost}</Text>
         <Text style={styles.txtDetails}>Details</Text>
-      </View>
-    </View>
+      </TouchableOpacity>
+    </TouchableOpacity>
   );
 };
 
@@ -20,7 +20,7 @@ const styles = StyleSheet.create({
     width: 86.44,
     height: 32.73,
     backgroundColor: 'black',
-    opacity: 0.7,
+    opacity: 0.75,
     borderBottomRightRadius: 8,
     borderBottomLeftRadius: 8,
     position: 'absolute',
@@ -31,12 +31,12 @@ const styles = StyleSheet.create({
     fontFamily: 'Poppins-Regular',
     fontSize: 10,
     marginTop: 3,
-    marginLeft: 6,
+    textAlign: 'center',
   },
   txtDetails: {
     color: '#EBFF09',
     fontFamily: 'Poppins-Regular',
-    fontSize: 7,
-    marginLeft: 28,
+    fontSize: 8,
+    textAlign: 'center',
   },
 });
