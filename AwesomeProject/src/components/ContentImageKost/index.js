@@ -1,9 +1,9 @@
 import {StyleSheet, Text, View, TouchableOpacity} from 'react-native';
 import React from 'react';
 
-const ContentImageKost = ({image, kost}) => {
+const ContentImageKost = ({image, kost, onPressViewDetails}) => {
   return (
-    <TouchableOpacity activeOpacity={0.8}>
+    <TouchableOpacity onPress={onPressViewDetails} activeOpacity={0.8}>
       {image}
       <TouchableOpacity activeOpacity={0.8} style={styles.contImage}>
         <Text style={styles.txtTitle}>{kost}</Text>

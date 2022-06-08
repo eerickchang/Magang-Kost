@@ -7,12 +7,12 @@ import {
   Image,
 } from 'react-native';
 import React, {useState} from 'react';
-import {AddImage} from '../../assets';
+import {AddImage, AddImageBackground} from '../../assets';
 import TextInput_AddOwner from '../TextInput_AddOwner';
 import Gap from '../Gap';
 import {launchImageLibrary} from 'react-native-image-picker';
 
-const ContentAddOwner = () => {
+const ContentAddOwner = ({onPress}) => {
   const [photo, setPhoto] = useState('');
   const [hasPhoto, setHasPhoto] = useState(false);
   const getPhoto = async () => {
@@ -29,13 +29,24 @@ const ContentAddOwner = () => {
       setHasPhoto(true);
     }
   };
+
   return (
     <ScrollView>
       <View style={styles.container}>
         <TouchableOpacity onPress={getPhoto}>
           {!hasPhoto && (
-            <View style={{borderRadius: 10, height: 100, width: 99}}>
-              <AddImage />
+            <View
+              style={{
+                borderRadius: 10,
+                height: 100,
+                width: 99,
+                justifyContent: 'center',
+                alignItems: 'center',
+              }}>
+              <AddImageBackground />
+              <View style={{position: 'absolute'}}>
+                <AddImage />
+              </View>
             </View>
           )}
           {hasPhoto && (
@@ -79,6 +90,7 @@ const ContentAddOwner = () => {
         />
         <Gap height={14} />
         <TouchableOpacity
+          onPress={onPress}
           style={{
             height: 27,
             width: 96,
@@ -102,6 +114,6 @@ const styles = StyleSheet.create({
   container: {
     justifyContent: 'center',
     alignItems: 'center',
-    marginTop: 143,
+    marginTop: 21,
   },
 });

@@ -1,44 +1,47 @@
-import { StyleSheet, Text, View } from 'react-native'
-import React from 'react'
-import { ContentViewPenyewa, Footer, Gap, HeaderAddOwner } from '../../components'
-import { HeaderOwner } from '..'
+import {StyleSheet, Text, View} from 'react-native';
+import React from 'react';
+import {
+  ContentViewPenyewa,
+  Footer,
+  Gap,
+  HeaderAddOwner,
+  HeaderOwner,
+} from '../../components';
 
-const ViewPenyewa = () => {
+const ViewPenyewa = ({navigation}) => {
   return (
     <View>
-        {/* Header */}
-        <HeaderOwner />
-        {/* Title */}
-        <View style={styles.label}>
-            <Text style={styles.txtLabel}>Tenant at</Text>
-            <Text style={styles.txtLabel}>Boarding House</Text>
-        </View>
+      {/* Header */}
+      <HeaderOwner onPress={() => navigation.navigate('HomeOwner')} />
+      {/* Title */}
+      <View style={styles.label}>
+        <Text style={styles.txtLabel}>Tenant at</Text>
+        <Text style={styles.txtLabel}>Boarding House</Text>
+      </View>
 
-        <Gap height={17} />
+      <Gap height={17} />
 
-        {/* Content */}
-        <ContentViewPenyewa />
-        
-        <Gap height={35} />
-        {/* Footer */}
-        <Footer />
+      {/* Content */}
+      <ContentViewPenyewa />
+
+      <Gap height={35} />
+      {/* Footer */}
+      <Footer />
     </View>
-  )
-}
+  );
+};
 
-export default ViewPenyewa
+export default ViewPenyewa;
 
 const styles = StyleSheet.create({
-    label:
-    {
-        marginLeft: 27,
-        position: 'absolute',
-        marginTop: 79
-    },
-    txtLabel:
-    {
-        fontWeight: 'bold',
-        fontSize: 20,
-        color: '#000000'
-    },
-})
+  label: {
+    marginLeft: 27,
+    position: 'absolute',
+    marginTop: 79,
+  },
+  txtLabel: {
+    fontWeight: 'bold',
+    fontSize: 20,
+    color: '#000000',
+  },
+});

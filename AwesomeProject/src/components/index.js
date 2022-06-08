@@ -1,6 +1,7 @@
 import Button from './Button';
 import Label from './Label';
 import TextInput from './TextInput';
+
 import ListKost from './ListKost';
 import ButtonEditDelete from './ButtonEditDelete';
 import HeaderAddOwner from './HeaderAddOwner';
@@ -11,6 +12,9 @@ import ContentHomeOwner from './ContentHomeOwner';
 import BorderSelectUser from './BorderSelectUser';
 import TenantsProfile from './TenantsProfile';
 import HeaderOwner from './HeaderOwner';
+import KontenTextInput from './KontenTextInput';
+import TextInputEditKost from './TextInputEditKost';
+import ButtonLanjutanEditKost from './ButtonLanjutanEditKost';
 import ContentViewBookedOwner from './ContentViewBookedOwn';
 import Footer from './Footer';
 import ContentImageKost from './ContentImageKost';
@@ -19,6 +23,7 @@ import ContenKostPopular from './ContentKostPopular';
 import SearchKostPopular from './SearchKostPopular';
 import ContentImgPopular from './ContentImgPopular';
 import StarContent from './StarContent';
+import ButtonOwner from './ButtonOwner';
 
 export {
   Button,
@@ -31,6 +36,9 @@ export {
   HeaderOwner,
   ContentViewBookedOwner,
   ContentHomeOwner,
+  KontenTextInput,
+  TextInputEditKost,
+  ButtonLanjutanEditKost,
   HeaderAddOwner,
   ContentAddOwner,
   ContentViewPenyewa,
@@ -43,4 +51,5 @@ export {
   ContentImgPopular,
   StarContent,
 
+  ButtonOwner,
 };
