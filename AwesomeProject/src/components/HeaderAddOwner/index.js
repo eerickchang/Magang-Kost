@@ -1,44 +1,42 @@
-import { StyleSheet, Text, View } from 'react-native'
-import React from 'react'
-import { IconBackLeft, User } from '../../assets'
-import Gap from '../Gap'
+import {StyleSheet, Text, View, TouchableOpacity} from 'react-native';
+import React from 'react';
+import {IconBackLeft, User} from '../../assets';
+import Gap from '../Gap';
 
-const HeaderAddOwner = () => {
+const HeaderAddOwner = ({onPressBack}) => {
   return (
     <View style={styles.container}>
-      <View style={styles.roundedShape}/>
+      <View style={styles.roundedShape} />
       <View style={styles.content}>
-        <IconBackLeft />
-          <Gap width={238} />
-          <User />
+        <TouchableOpacity onPress={onPressBack} activeOpacity={0.7}>
+          <IconBackLeft />
+        </TouchableOpacity>
+        <Gap width={238} />
+        <User />
       </View>
     </View>
-  )
-}
+  );
+};
 
-export default HeaderAddOwner
+export default HeaderAddOwner;
 
 const styles = StyleSheet.create({
-  container:
-  {
+  container: {
     // height: 122,
     // width: 360,
     // backgroundColor: 'black',
-    position: 'absolute'
+    position: 'absolute',
   },
-  content:
-  {
+  content: {
     flexDirection: 'row',
     marginLeft: 26,
     marginTop: 33,
     position: 'absolute',
-    // backgroundColor: 'blue'
   },
-  roundedShape:
-  {
+  roundedShape: {
     height: 122,
-    width:136, 
-    backgroundColor: '#FFC700', 
+    width: 136,
+    backgroundColor: '#FFC700',
     borderBottomRightRadius: 300,
-  }
-})
+  },
+});

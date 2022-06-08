@@ -76,8 +76,7 @@ const LanjutanViewPenyewa = ({navigation}) => {
           icons={<Tenants5 />}
         />
       </ScrollView>
-      {/* <Gap height={45} /> */}
-      {/* <Footer /> */}
+      <View style={{height: 120, backgroundColor: '#fff'}} />
     </View>
   );
 };
