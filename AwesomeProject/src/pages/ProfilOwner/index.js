@@ -1,15 +1,17 @@
-import {StyleSheet, Text, View} from 'react-native';
+import {StyleSheet, Text, View, TouchableOpacity} from 'react-native';
 import React from 'react';
-import {IconBackLeft, IconRegistration} from '../../assets';
+import {UserProfilOwner, IconBackLeft, IconRegistration} from '../../assets';
 import {BorderSelectUser, ButtonOwner, Gap} from '../../components';
 
-const ProfilOwner = () => {
+const ProfilOwner = ({navigation}) => {
   return (
     <View>
-      <View style={styles.sun}>
+      <TouchableOpacity
+        style={styles.sun}
+        onPress={() => navigation.navigate('HomeOwner')}>
         <Gap height={36} />
         <IconBackLeft />
-      </View>
+      </TouchableOpacity>
       <View style={styles.viewProfilOwner}>
         <Gap height={24} />
         <UserProfilOwner />
@@ -20,10 +22,17 @@ const ProfilOwner = () => {
         <View style={styles.viewIconRegistration}>
           <IconRegistration />
         </View>
-      </View>
-      <View style={styles.buttonWrapper}>
-        <ButtonOwner />
-      </View>
+      </View> 
+      <Gap height={115} />
+      <TouchableOpacity style={styles.buttonWrapper}
+        onPress={() => navigation.navigate('EditKost')}>
+        <ButtonOwner title = {"My Kost"} backgroundColor = {"#000000"} fontColor = {"#ffffff"}/> 
+      </TouchableOpacity> 
+      <Gap height={24} />
+      <TouchableOpacity style={styles.buttonWrapper}
+        onPress={() => navigation.navigate('SelectUser')}>
+       <ButtonOwner title={"LogOut"} backgroundColor = {"#FFC700"} fontColor={"#000000"} />
+      </TouchableOpacity>
     </View>
   );
 };
@@ -55,7 +64,7 @@ const styles = StyleSheet.create({
   },
   buttonWrapper: {
     marginLeft: 54,
-    marginTop: 187,
+  
   },
   ownerNumber: {
     fontFamily: 'Poppins-Light',

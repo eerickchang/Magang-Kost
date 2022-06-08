@@ -16,6 +16,7 @@ import ContentViewBookedOwner from './ContentViewBookedOwn';
 import Footer from './Footer';
 import ContentImageKost from './ContentImageKost';
 import HeaderSignUp from './HeaderSignUp';
+import ButtonOwner from './ButtonOwner';
 
 export {
   Button,
@@ -35,4 +36,5 @@ export {
   ListKost,
   ButtonEditDelete,
   HeaderSignUp,
+  ButtonOwner,
 };

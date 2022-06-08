@@ -1,8 +1,8 @@
-import {StyleSheet, Text, View} from 'react-native';
+import {StyleSheet, Text, View, TouchableOpacity} from 'react-native';
 import React from 'react';
 import {Button, HeaderSignUp, TextInput, Gap} from '../../components';
 
-const SignUpOwner = () => {
+const SignUpOwner = ({navigation}) => {
   return (
     <View style={styles.container}>
       <View style={styles.input}>
@@ -15,12 +15,17 @@ const SignUpOwner = () => {
         <Gap height={22} />
         <TextInput title="No Telepon" />
       </View>
-      <View style={styles.button}>
+      <TouchableOpacity onPress={() => navigation.navigate('LoginOwner')} style={styles.button}>
         <Text style={styles.textButton}>Sign Up</Text>
-      </View>
+      </TouchableOpacity>
       <View style={styles.textBawah}>
-        <Text>Already have an account? login</Text>
+        <Text>Already have an account?</Text>
+        <TouchableOpacity onPress={() => navigation.navigate('LoginOwner')} >
+        <Text style={{fontWeight: 'bold', marginLeft: 3, color: 'black'}}>login</Text>
+        </TouchableOpacity>
+        
       </View>
+      
     </View>
   );
 };
@@ -51,5 +56,7 @@ const styles = StyleSheet.create({
   textBawah: {
     marginTop: 31,
     fontSize: 13,
+    flexDirection:'row'
+    
   },
 });
