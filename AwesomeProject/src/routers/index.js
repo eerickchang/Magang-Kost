@@ -40,11 +40,6 @@ const Routers = () => {
         options={{headerShown: false}}
       />
       <Stack.Screen
-        name="ViewBookedOwner"
-        component={ViewBookedOwner}
-        options={{headerShown: false}}
-      />
-      <Stack.Screen
         name="LanjutanViewPenyewa"
         component={LanjutanViewPenyewa}
         options={{headerShown: false}}
@@ -86,11 +81,6 @@ const Routers = () => {
         options={{headerShown: false}}
       />
       <Stack.Screen
-        name="ViewPenyewa"
-        component={ViewPenyewa}
-        options={{headerShown: false}}
-      />
-      <Stack.Screen
         name="LanjutanEditKost"
         component={LanjutanEditKost}
         options={{headerShown: false}}
@@ -110,11 +100,7 @@ const Routers = () => {
         component={EditKost}
         options={{headerShown: false}}
       />
-      <Stack.Screen
-        name="AddOwner"
-        component={AddOwner}
-        options={{headerShown: false}}
-      />
+
       <Stack.Screen
         name="ViewPenyewa"
         component={ViewPenyewa}

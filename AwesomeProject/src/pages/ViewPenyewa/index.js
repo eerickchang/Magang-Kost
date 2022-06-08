@@ -8,11 +8,11 @@ import {
   HeaderOwner,
 } from '../../components';
 
-const ViewPenyewa = () => {
+const ViewPenyewa = ({navigation}) => {
   return (
     <View>
       {/* Header */}
-      <HeaderOwner />
+      <HeaderOwner onPress={() => navigation.navigate('HomeOwner')} />
       {/* Title */}
       <View style={styles.label}>
         <Text style={styles.txtLabel}>Tenant at</Text>

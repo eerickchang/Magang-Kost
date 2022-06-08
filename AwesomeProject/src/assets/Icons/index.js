@@ -54,7 +54,7 @@ import HomeNav from './HomeNav.svg';
 import UserNav from './UserNav.svg';
 import BoardingHouse1 from './BoardingHouse1.svg';
 import BoardingHouse2 from './BoardingHouse2.svg';
-import WomanProfile from './WomanProfile.svg'
+import WomanProfile from './WomanProfile.svg';
 import LogoKecil from './LogoKecil.svg';
 import LogoBesar from './LogoBesar.svg';
 import SearchHome from './SearchHome.svg';
@@ -62,7 +62,7 @@ import ImageHome1 from './ImageHome1.svg';
 import ImageHome2 from './ImageHome2.svg';
 import ImageHome3 from './ImageHome3.svg';
 import UserProfilOwner from './UserProfilOwner.svg';
-
+import AddImageBackground from './AddImageBackground.svg';
 
 export {
   IconBackLeft,
@@ -113,5 +113,17 @@ export {
   ImageHome1,
   ImageHome2,
   ImageHome3,
-  Available, Description, Price, Size, Star, Telephone, Type, UserIconSmall, UserNavigation, HomeNavigation, Location, BigLocation,
+  Available,
+  Description,
+  Price,
+  Size,
+  Star,
+  Telephone,
+  Type,
+  UserIconSmall,
+  UserNavigation,
+  HomeNavigation,
+  Location,
+  BigLocation,
+  AddImageBackground,
 };
