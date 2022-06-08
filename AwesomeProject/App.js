@@ -7,6 +7,7 @@ import {
   SelectUser,
   SignUp,
   SignUpOwner,
+  ViewBookedOwner,
 } from './src';
 
 const App = () => {

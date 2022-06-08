@@ -13,6 +13,7 @@ import {
   ViewBookedOwner,
   ViewDetails,
 } from '../pages';
+import {HomeNav, UserNav} from '../assets';
 
 const Stack = createNativeStackNavigator();
 
