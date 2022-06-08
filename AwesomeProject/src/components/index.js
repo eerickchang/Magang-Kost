@@ -3,7 +3,6 @@ import Label from './Label';
 import TextInput from './TextInput';
 import ListKost from './ListKost';
 import ButtonEditDelete from './ButtonEditDelete';
-import HeaderSignUp from './HeaderSignUp';
 import HeaderAddOwner from './HeaderAddOwner';
 import ContentAddOwner from './ContentAddOwner';
 import ContentViewPenyewa from './ContentViewPenyewa';
@@ -15,6 +14,7 @@ import HeaderOwner from './HeaderOwner';
 import ContentViewBookedOwner from './ContentViewBookedOwn';
 import Footer from './Footer';
 import ContentImageKost from './ContentImageKost';
+import HeaderSignUp from './HeaderSignUp';
 
 export {
   Button,
@@ -31,7 +31,7 @@ export {
   ContentAddOwner,
   ContentViewPenyewa,
   ContentImageKost,
+  ListKost,
+  ButtonEditDelete,
   HeaderSignUp,
-  ListKost, 
-  ButtonEditDelete
 };

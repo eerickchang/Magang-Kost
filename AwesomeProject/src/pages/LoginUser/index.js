@@ -3,7 +3,7 @@ import React from 'react';
 import {Gap, TextInput} from '../../components';
 import {LogoKecil} from '../../assets';
 
-const LoginOwner = ({navigation}) => {
+const LoginUser = ({navigation}) => {
   return (
     <View
       style={{
@@ -27,21 +27,20 @@ const LoginOwner = ({navigation}) => {
 
       <View style={styles.Kotak}>
         <View style={styles.Centang}></View>
-
         <Text style={styles.txtCentang}>remember me?</Text>
       </View>
 
       <Gap height={51} />
       <TouchableOpacity
         style={styles.Button}
-        onPress={() => navigation.navigate('HomeOwner')}>
+        onPress={() => navigation.navigate('HomePenyewa')}>
         <Text style={styles.textLog}>Login</Text>
       </TouchableOpacity>
 
       <Gap height={39} />
       <View style={styles.Signin}>
         <Text style={styles.txtSignin}>don't have an account? </Text>
-        <TouchableOpacity onPress={() => navigation.navigate('SignUpOwner')}>
+        <TouchableOpacity onPress={() => navigation.navigate('SignUp')}>
           <Text style={styles.txtSigninBold}> sign up</Text>
         </TouchableOpacity>
       </View>
@@ -50,7 +49,7 @@ const LoginOwner = ({navigation}) => {
   );
 };
 
-export default LoginOwner;
+export default LoginUser;
 
 const styles = StyleSheet.create({
   Ocop: {
@@ -60,7 +59,7 @@ const styles = StyleSheet.create({
   },
   Button: {
     // borderWidth: 1,
-    backgroundColor: '#FFDD66',
+    backgroundColor: '#00FFB2',
     width: 261,
     height: 49,
     borderRadius: 6,

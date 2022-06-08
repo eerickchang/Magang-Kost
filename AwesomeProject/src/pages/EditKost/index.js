@@ -14,7 +14,7 @@ import {
 } from '../../assets';
 import {ListKost} from '../../components';
 
-const Edit = () => {
+const EditKost = () => {
   return (
     <View style={{flex: 1}}>
       <ScrollView showsVerticalScrollIndicator={false}>
@@ -27,7 +27,7 @@ const Edit = () => {
           </View>
         </View>
         <View>
-          <Text style={styles.txtEditKost}>Edit Kost</Text>
+          <Text style={styles.txtEditKost}>My Kost</Text>
         </View>
         <View style={styles.editKost}>
           <ListKost />
@@ -45,7 +45,7 @@ const Edit = () => {
   );
 };
 
-export default Edit;
+export default EditKost;
 
 const styles = StyleSheet.create({
   header: {
@@ -60,15 +60,16 @@ const styles = StyleSheet.create({
   },
   txtEditKost: {
     fontSize: 24,
-    fontWeight: 'bold',
+    fontFamily: 'Poppins-Bold',
     color: 'black',
     marginLeft: 32,
     marginTop: 20,
   },
   editKost: {
-    marginTop: 16,
+    marginTop: 10,
     marginLeft: 30,
-    marginBottom: 60,
+    paddingBottom: 60, 
+    // flex: 1
   },
   navigation: {
     flexDirection: 'row',

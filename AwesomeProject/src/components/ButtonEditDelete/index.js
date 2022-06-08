@@ -26,7 +26,7 @@ const styles = StyleSheet.create({
     },
     txtButtonEdit: color => ({
         color: color,
-        fontWeight: 'bold',
         fontSize: 8,
+        fontFamily: 'Poppins-SemiBold'
     }),
 })

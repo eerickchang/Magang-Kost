@@ -46,7 +46,7 @@ const ListKost = () => {
     },
   ]);
   return (
-    <View>
+    <>
       {dataKost.map(item => (
         <View style={styles.viewListKost} key={item.key}>
           <Image source={item.image} style={styles.image} />
@@ -64,10 +64,9 @@ const ListKost = () => {
               </View>
             </View>
           </View>
-          <View></View>
         </View>
       ))}
-    </View>
+    </>
   );
 };
 
@@ -77,34 +76,36 @@ const styles = StyleSheet.create({
   viewListKost: {
     backgroundColor: '#FFC700',
     width: 294,
-    height: 136,
+    height: 140,
     borderRadius: 10,
     flexDirection: 'row',
     marginBottom: 22,
+    // flex: 1
   },
   image: {
     width: 150,
-    height: 136,
+    height: 140,
     borderTopLeftRadius: 10,
     borderBottomLeftRadius: 10,
   },
   viewTitle: {
-    marginTop: 12,
+    marginTop:10,
     marginLeft: 12,
     flex: 1,
   },
   txtTitle: {
     color: 'black',
     fontSize: 20,
-    fontWeight: 'bold',
-    marginBottom: 2,
+    fontFamily: 'Poppins-Bold',
+    marginBottom: -4
   },
   txtLocation: {
+    fontFamily: 'Poppins-Regular',
     color: 'black',
-    fontSize: 10,
-    marginBottom: 2,
+    fontSize: 10,   
   },
   txtWifi: {
+    fontFamily: 'Poppins-Regular',
     color: 'white',
     fontSize: 9,
   },
@@ -115,7 +116,8 @@ const styles = StyleSheet.create({
   txtPrice: {
     marginRight: 14,
     color: 'black',
-    fontWeight: 'bold',
+    fontFamily: 'Poppins-SemiBold',
+    fontSize: 11
   },
   viewButton: {
     flexDirection: 'row',

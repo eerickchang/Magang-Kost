@@ -1,5 +1,4 @@
 import SelectUser from './SelectUser';
-import SignIn from './SignIn';
 import SignUp from './SignUp';
 import SplashScreen from './SplashScreen';
 import SignUpOwner from './SignUpOwner';
@@ -14,11 +13,12 @@ import ViewBookedOwner from './ViewBookedOwner';
 import ProfileUser from './ProfileUser';
 import HomePenyewa from './HomePenyewa';
 import ContentHomePenyewa from '../components/ContentHomePenyewa';
+import LoginUser from './LoginUser';
 import ViewPenyewa from './ViewPenyewa';
 
 export {
   SelectUser,
-  SignIn,
+  LoginUser,
   SignUp,
   SplashScreen,
   HomeOwner,
@@ -33,5 +33,5 @@ export {
   LoginOwner,
   SignUpOwner,
   EditKost,
-  ViewPenyewa
+  ViewPenyewa,
 };

@@ -16,13 +16,10 @@ const SignUp = () => {
         <TextInput title="No Telepon" />
       </View>
       <View style={styles.button}>
-       <Text style={styles.textButton 
-       
-       }>Sign Up</Text>
-       
+        <Text style={styles.textButton}>Sign Up</Text>
       </View>
       <View style={styles.textBawah}>
-       <Text>Already have an account? login</Text>
+        <Text>Already have an account? login</Text>
       </View>
     </View>
   );
@@ -36,7 +33,7 @@ const styles = StyleSheet.create({
     alignItems: 'center',
   },
   input: {},
-  button:{
+  button: {
     width: 261,
     height: 49,
     backgroundColor: '#FFC700',
@@ -45,11 +42,10 @@ const styles = StyleSheet.create({
   },
   textButton: {
     fontSize: 18,
-    fontFamily: 'Poppins',
-    fontWeight: 'bold',
+    fontFamily: 'Poppins-Bold',
     marginTop: 9,
     marginLeft: 96,
-    
+    color: '#000',
   },
   textBawah: {
     marginTop: 31,

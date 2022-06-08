@@ -21,7 +21,7 @@ import {
   Telephone,
 } from '../../assets';
 
-const ViewDetails = () => {
+const ViewDetails = ({navigation}) => {
   const [dataPicture, setDataPicture] = useState([
     {image: require('../../assets/pictures/g1.jpg')},
     {image: require('../../assets/pictures/g2.jpg')},
@@ -35,7 +35,7 @@ const ViewDetails = () => {
     <View style={{backgroundColor: 'white'}}>
       <ScrollView showsVerticalScrollIndicator={false}>
         <View style={styles.container}>
-          <TouchableOpacity activeOpacity={0.6}>
+          <TouchableOpacity activeOpacity={0.6} onPress={() => navigation.navigate('HomePenyewa') }>
             <IconBackLeft />
           </TouchableOpacity>
         </View>
@@ -45,7 +45,7 @@ const ViewDetails = () => {
             <View style={styles.iconLocation}>
               <Location />
             </View>
-            <Text>Jl. Kanaan, Airmadidi</Text>
+            <Text style={styles.txtLocation}>Jl. Kanaan, Airmadidi</Text>
             <View style={styles.star}>
               <View style={styles.iconStar}>
                 <Star />
@@ -88,7 +88,7 @@ const ViewDetails = () => {
             <Text style={styles.txtAvailable1}>Available</Text>
           </View>
           <Text style={styles.txtAvailable2}>2 room from 5 room</Text>
-          <View style={styles.viewGarisLurus} />
+          <View style={styles.GarisLurus} />
           <View style={styles.viewSize}>
             <Size />
             <Text style={styles.txtSize1}>Size Room</Text>
@@ -129,8 +129,8 @@ const styles = StyleSheet.create({
     marginLeft: 26,
   },
   txtJudul: {
+    fontFamily: 'Poppins-Bold',
     fontSize: 20,
-    fontWeight: 'bold',
     width: 120,
     color: '#030303',
     marginTop: 16,
@@ -139,6 +139,11 @@ const styles = StyleSheet.create({
   location: {
     flexDirection: 'row',
     marginRight: 26,
+  },
+  txtLocation: {
+    fontFamily: 'Poppins-Light',
+    color: 'black',
+    marginLeft: 2
   },
   iconLocation: {
     marginTop: 2,
@@ -152,10 +157,12 @@ const styles = StyleSheet.create({
     marginTop: 2,
   },
   txtRating: {
-    fontWeight: 'bold',
+    fontFamily: 'Poppins-SemiBold',
+    color: 'black'
   },
   txtUlasan: {
-    fontWeight: '300',
+    fontFamily: 'Poppins-Light',
+    color: 'black'
   },
   picture: {
     marginLeft: 26,
@@ -180,69 +187,94 @@ const styles = StyleSheet.create({
   },
   viewTelephone: {
     flexDirection: 'row',
+    alignItems: 'center'
   },
   txtTelephone1: {
     marginLeft: 10,
-    fontWeight: 'bold',
+    fontFamily: 'Poppins-SemiBold',
+    color: 'black',
+    fontSize: 16,
   },
   txtTelephone2: {
     marginLeft: 25,
     marginBottom: 20,
+    fontFamily: 'Poppins-Light',
+    color: 'black',
   },
   viewPrice: {
     flexDirection: 'row',
+    alignItems: 'center'
   },
   txtPrice1: {
     marginLeft: 15,
-    fontWeight: 'bold',
+    fontFamily: 'Poppins-SemiBold',
+    color: 'black',
+    fontSize: 16,
   },
   txtPrice2: {
     marginLeft: 25,
     marginBottom: 20,
+    fontFamily: 'Poppins-Light',
+    color: 'black',
   },
   viewAvailable: {
     flexDirection: 'row',
+    alignItems: 'center'
   },
   txtAvailable1: {
     marginLeft: 9,
-    fontWeight: 'bold',
+    fontFamily: 'Poppins-SemiBold',
+    color: 'black',
+    fontSize: 16,
   },
   txtAvailable2: {
     marginLeft: 25,
-    marginTop: -8,
+    marginTop: -6,  
+    fontFamily: 'Poppins-Light',
+    color: 'black',
   },
-  viewGarisLurus: {
-    flex: 1,
-    height: 1,
+  GarisLurus: {
+    height: 2,
     width: 48,
     backgroundColor: 'black',
     marginBottom: 18,
     marginLeft: 25,
+    marginTop: -2,
   },
   viewSize: {
     flexDirection: 'row',
     marginLeft: -9,
+    alignItems: 'center'
   },
   txtSize1: {
     marginLeft: 0,
-    fontWeight: 'bold',
+    fontFamily: 'Poppins-SemiBold',
+    color: 'black',
+    fontSize: 16,
   },
   txtSize2: {
     marginLeft: 25,
     marginBottom: 20,
+    fontFamily: 'Poppins-Light',
+    color: 'black',
   },
   viewDescription: {
     flexDirection: 'row',
     marginLeft: -2,
+    alignItems: 'center'
   },
   txtDescription1: {
     marginLeft: 9,
-    fontWeight: 'bold',
+    fontFamily: 'Poppins-SemiBold',
+    color: 'black',
+    fontSize: 16,
   },
   txtDescription2: {
     marginLeft: 25,
     marginBottom: 20,
     marginRight: 26,
+    fontFamily: 'Poppins-Light',
+    color: 'black',
   },
   viewButtonBooking: {
     alignItems: 'center',
@@ -258,7 +290,7 @@ const styles = StyleSheet.create({
   },
   txtButton: {
     color: 'white',
-    fontWeight: 'bold',
-    fontSize: 18,
+    fontSize: 17,
+    fontFamily: 'Poppins-Bold'
   },
 });
