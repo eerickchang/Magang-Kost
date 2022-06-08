@@ -18,6 +18,7 @@ import {
   ProfilOwner,
   EditKost,
 } from '../pages';
+import {HomeNav, UserNav} from '../assets';
 
 const Stack = createNativeStackNavigator();
 
