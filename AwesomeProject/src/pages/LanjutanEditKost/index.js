@@ -1,4 +1,10 @@
-import {StyleSheet, Text, View, ScrollView} from 'react-native';
+import {
+  StyleSheet,
+  Text,
+  View,
+  ScrollView,
+  TouchableOpacity,
+} from 'react-native';
 import React from 'react';
 import {
   IconBackLeft,
@@ -8,14 +14,23 @@ import {
   User,
   AddImage,
 } from '../../assets';
-import {KontenTextInput, Gap, Button, ButtonLanjutanEditKost} from '../../components';
+import {
+  KontenTextInput,
+  Gap,
+  Button,
+  ButtonLanjutanEditKost,
+  navigation,
+} from '../../components';
 
-const LanjutanEditKost = () => {
+const LanjutanEditKost = ({onPress, navigation}) => {
   return (
-    <View style= {{marginTop: 33}}>
+    <View style={{marginTop: 33}}>
       <ScrollView>
         <View style={styles.Header}>
-          <IconBackLeft />
+          <TouchableOpacity onPress={() => navigation.navigate('EditKost')}>
+            <IconBackLeft />
+          </TouchableOpacity>
+
           <User style={styles.IconUser} />
         </View>
         <Text style={styles.Title}>Edit Kost</Text>
@@ -25,44 +40,70 @@ const LanjutanEditKost = () => {
               <ImgEditKost style={styles.ImgKost} />
               <ImgBlurEditKost style={styles.ImgBlur} />
               <View style={{flexDirection: 'row'}}>
-              <Text style={styles.TitleKonten}>Princeton</Text>
-              <Gap width={9}/>
-              <Pencil />
-              
-              
+                <Text style={styles.TitleKonten}>Princeton</Text>
+                <Gap width={9} />
+                <Pencil />
               </View>
-              <View style={{marginTop: 24, marginLeft: 55, alignItems: 'center'}}>
-              {/* <Gap height={24}/> */}
-              <AddImage />
-              <Text style={{color: 'black'}}>Add Image</Text>
-              <View>
-              </View>
+              <View
+                style={{marginTop: 24, marginLeft: 55, alignItems: 'center'}}>
+                {/* <Gap height={24}/> */}
+                <AddImage />
+                <Text style={{color: 'black'}}>Add Image</Text>
+                <View></View>
               </View>
             </View>
             <Text style={styles.SubTitleKonten}>Edit Detail Kost</Text>
             <Gap height={20} />
             <View style={styles.KontenTextInput}>
-              <KontenTextInput Title={'Address'} SubTitle={'Aermadidi, Kanaan No 12'} Width={20}/>
+              <KontenTextInput
+                Title={'Address'}
+                SubTitle={'Aermadidi, Kanaan No 12'}
+                Width={20}
+              />
               <Gap height={20} />
-              <KontenTextInput Title={'Phone Number'} SubTitle={'08981865951'} Width={90}/>
+              <KontenTextInput
+                Title={'Phone Number'}
+                SubTitle={'08981865951'}
+                Width={90}
+              />
               <Gap height={20} />
-              <KontenTextInput Title={'Price Kost'} SubTitle={'2 From 6 Room'} Width={78} />
+              <KontenTextInput
+                Title={'Price Kost'}
+                SubTitle={'2 From 6 Room'}
+                Width={78}
+              />
               <Gap height={20} />
-              <KontenTextInput Title={'Available'} SubTitle={'08981865951'} Width={84}/>
+              <KontenTextInput
+                Title={'Available'}
+                SubTitle={'08981865951'}
+                Width={84}
+              />
               <Gap height={20} />
-              <KontenTextInput Title={'Type Kost'} SubTitle={'6 x 3 m'} Width={124}/>
+              <KontenTextInput
+                Title={'Type Kost'}
+                SubTitle={'6 x 3 m'}
+                Width={124}
+              />
               <Gap height={20} />
-              <KontenTextInput Title={'Size Room '} SubTitle={'08981865951'} Width={85}/>
+              <KontenTextInput
+                Title={'Size Room '}
+                SubTitle={'08981865951'}
+                Width={85}
+              />
               <Gap height={20} />
-              <KontenTextInput Title={'Description'} SubTitle={'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. '} Width={135}/>
+              <KontenTextInput
+                Title={'Description'}
+                SubTitle={
+                  'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. '
+                }
+                Width={135}
+              />
               <Gap height={20} />
-            
             </View>
-            <View style={{marginLeft:45, borderRadius: 8}}>
-            <ButtonLanjutanEditKost style={{borderRadius: 8}}/>
+            <View style={{marginLeft: 45, borderRadius: 8}}>
+              <ButtonLanjutanEditKost style={{borderRadius: 8}} />
             </View>
           </View>
-          
         </View>
       </ScrollView>
     </View>
@@ -75,7 +116,6 @@ const styles = StyleSheet.create({
   Header: {
     flexDirection: 'row',
     marginLeft: 30,
-    
   },
   IconUser: {
     marginLeft: 238,

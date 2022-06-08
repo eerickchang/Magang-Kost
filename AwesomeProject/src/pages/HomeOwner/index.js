@@ -3,7 +3,7 @@ import React from 'react';
 import {ContentHomeOwner, Gap} from '../../components';
 import {User} from '../../assets';
 
-const HomeOwner = () => {
+const HomeOwner = ({navigation}) => {
   return (
     <View style={styles.container}>
       <View style={styles.header}>
@@ -22,6 +22,7 @@ const HomeOwner = () => {
           title={'Add Kost'}
           subTitle={'Already have 2 Kost'}
           buton={'Add'}
+          onPress={() => navigation.navigate('AddOwner')}
         />
         <Gap height={20} />
         <ContentHomeOwner
@@ -29,6 +30,7 @@ const HomeOwner = () => {
           title={'View Book'}
           subTitle={'3 Rooms has been booked'}
           buton={'View'}
+          onPress={() => navigation.navigate('ViewBookedOwner')}
         />
         <Gap height={20} />
         <ContentHomeOwner
@@ -36,6 +38,7 @@ const HomeOwner = () => {
           title={'View Tenant'}
           subTitle={'there are 3 tenants'}
           buton={'View'}
+          onPress={() => navigation.navigate('ViewPenyewa')}
         />
       </View>
     </View>
