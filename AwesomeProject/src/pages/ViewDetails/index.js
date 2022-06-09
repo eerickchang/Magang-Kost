@@ -31,6 +31,31 @@ const ViewDetails = () => {
     {image: require('../../assets/pictures/g5.jpg')},
     {image: require('../../assets/pictures/g6.jpg')},
   ]);
+  const dataKost = {
+    masterImage: require('../../assets/pictures/g1.jpg'),
+    images: [
+      {image: require('../../assets/pictures/g1.jpg')},
+      {image: require('../../assets/pictures/g2.jpg')},
+      {image: require('../../assets/pictures/gVidio.png')},
+      {image: require('../../assets/pictures/g3.jpg')},
+      {image: require('../../assets/pictures/g4.jpg')},
+      {image: require('../../assets/pictures/g5.jpg')},
+      {image: require('../../assets/pictures/g6.jpg')},
+    ],
+    namaKost: 'Princeton HomeStay',
+    telpOwner: '08981865952',
+    priceKost: '$ 42 / Month',
+    available: '2 From 6 room',
+    typeKost: 'Only men',
+    sizeRoom: '6 x 3 m',
+    ulasan: '800',
+    lokasi: 'Jl. Marten, NO. 69 Kanaan, Aermadidi',
+    rating: '4.9',
+    key: 1,
+    deskripsi:
+      'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. ',
+  };
+
   return (
     <View>
       <ScrollView showsVerticalScrollIndicator={false}>
@@ -40,28 +65,25 @@ const ViewDetails = () => {
           </TouchableOpacity>
         </View>
         <View style={styles.viewTitleKost}>
-          <Text style={styles.txtJudul}>Pricenton Home Stay</Text>
+          <Text style={styles.txtJudul}>{dataKost.namaKost}</Text>
           <View style={styles.location}>
             <View style={styles.iconLocation}>
               <Location />
             </View>
-            <Text>Jl. Kanaan, Airmadidi</Text>
+            <Text>{dataKost.lokasi}</Text>
             <View style={styles.star}>
               <View style={styles.iconStar}>
                 <Star />
               </View>
-              <Text style={styles.txtRating}> 4.9</Text>
-              <Text style={styles.txtUlasan}> (Ulasan)</Text>
+              <Text style={styles.txtRating}> {dataKost.rating}</Text>
+              <Text style={styles.txtUlasan}> {dataKost.ulasan}</Text>
             </View>
           </View>
         </View>
         <View style={styles.picture}>
-          <Image
-            source={require('../../assets/pictures/g1.jpg')}
-            style={styles.masterPicture}
-          />
+          <Image source={dataKost.masterImage} style={styles.masterPicture} />
           <FlatList
-            data={dataPicture}
+            data={dataKost.images}
             horizontal
             showsHorizontalScrollIndicator={false}
             renderItem={({item}) => (
@@ -77,31 +99,28 @@ const ViewDetails = () => {
             <Telephone />
             <Text style={styles.txtTelephone1}>Owner</Text>
           </View>
-          <Text style={styles.txtTelephone2}>0123456789</Text>
+          <Text style={styles.txtTelephone2}>{dataKost.telpOwner}</Text>
           <View style={styles.viewPrice}>
             <Price />
             <Text style={styles.txtPrice1}>Price Kost</Text>
           </View>
-          <Text style={styles.txtPrice2}>$ 43 / Month</Text>
+          <Text style={styles.txtPrice2}>{dataKost.priceKost}</Text>
           <View style={styles.viewAvailable}>
             <Available />
             <Text style={styles.txtAvailable1}>Available</Text>
           </View>
-          <Text style={styles.txtAvailable2}>2 room from 5 room</Text>
+          <Text style={styles.txtAvailable2}>{dataKost.available}</Text>
           <View style={styles.viewGarisLurus} />
           <View style={styles.viewSize}>
             <Size />
             <Text style={styles.txtSize1}>Size Room</Text>
           </View>
-          <Text style={styles.txtSize2}>6 x 4 m</Text>
+          <Text style={styles.txtSize2}>{dataKost.sizeRoom}</Text>
           <View style={styles.viewDescription}>
             <Description />
             <Text style={styles.txtDescription1}>Description</Text>
           </View>
-          <Text style={styles.txtDescription2}>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-            eiusmod tempor incididunt ut labore et dolore magna aliqua.{' '}
-          </Text>
+          <Text style={styles.txtDescription2}>{dataKost.deskripsi}</Text>
         </View>
         <View style={styles.viewButtonBooking}>
           <TouchableOpacity style={styles.buttonBooking}>
