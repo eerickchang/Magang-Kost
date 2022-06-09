@@ -62,6 +62,8 @@ import ImageHome1 from './ImageHome1.svg';
 import ImageHome2 from './ImageHome2.svg';
 import ImageHome3 from './ImageHome3.svg';
 import UserProfilOwner from './UserProfilOwner.svg';
+import Popular1 from './Popular1.svg'
+import Popular2 from './Popular2.svg'
 import AddImageBackground from './AddImageBackground.svg';
 
 export {
@@ -126,4 +128,7 @@ export {
   Location,
   BigLocation,
   AddImageBackground,
+  Popular1,
+  Popular2,
+
 };

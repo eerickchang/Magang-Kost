@@ -16,7 +16,23 @@ const HomePenyewa = ({navigation}) => {
   return (
     <View>
       <SearchHomePenyewa />
-      <ScrollView style={{height: 500}}>
+      <ScrollView style={{height: 402}}>
+        <ContentHomePenyewa
+          suggest={'Kost Popular'}
+          onPressDetailPrinceton={() => navigation.navigate('PopularKost')}
+        />
+        <ContentHomePenyewa
+          suggest={'Kost Bisae'}
+          onPressDetailPrinceton={() => navigation.navigate('ViewDetails')}
+        />
+        <ContentHomePenyewa
+          suggest={'Kost Top'}
+          onPressDetailPrinceton={() => navigation.navigate('ViewDetails')}
+        />
+        <ContentHomePenyewa
+          suggest={'Kost Afordabel'}
+          onPressDetailPrinceton={() => navigation.navigate('ViewDetails')}
+        />
         <View style={styles.container}>
           <Text style={styles.txt}>Kost Rekomendasi</Text>
           <Gap height={6} />
@@ -155,7 +171,7 @@ const HomePenyewa = ({navigation}) => {
           </TouchableOpacity>
         </View>
       </ScrollView>
-      <Footer />
+      {/* <Footer /> */}
     </View>
   );
 };
