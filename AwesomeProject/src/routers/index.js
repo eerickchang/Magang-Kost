@@ -33,6 +33,12 @@ const Routers = () => {
   return (
     <Stack.Navigator>
       <Stack.Screen
+        name="ViewDetails"
+        component={ViewDetails}
+        options={{headerShown: false}}
+      />
+
+      <Stack.Screen
         name="SplashScreen"
         component={SplashScreen}
         options={{headerShown: false}}
@@ -92,11 +98,7 @@ const Routers = () => {
         component={SignUpOwner}
         options={{headerShown: false}}
       />
-      <Stack.Screen
-        name="ViewDetails"
-        component={ViewDetails}
-        options={{headerShown: false}}
-      />
+
       <Stack.Screen
         name="PopularKost"
         component={PopularKost}
