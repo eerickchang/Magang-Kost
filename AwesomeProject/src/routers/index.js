@@ -22,7 +22,6 @@ import {
   ProfilOwner,
   ProfileUser,
   PopularKost,
-  ContentKostPopular,
   EditKost,
 } from '../pages';
 import {Home, HomeNav, UserNav} from '../assets';
@@ -33,6 +32,12 @@ const Tab = createBottomTabNavigator();
 const Routers = () => {
   return (
     <Stack.Navigator>
+      <Stack.Screen
+        name="ViewDetails"
+        component={ViewDetails}
+        options={{headerShown: false}}
+      />
+
       <Stack.Screen
         name="SplashScreen"
         component={SplashScreen}
@@ -56,6 +61,11 @@ const Routers = () => {
       <Stack.Screen
         name="HomePenyewa"
         component={TabFooterUser}
+        options={{headerShown: false}}
+      />
+      <Stack.Screen
+        name="HomeOwner"
+        component={TabFooterO}
         options={{headerShown: false}}
       />
       <Stack.Screen
@@ -88,11 +98,7 @@ const Routers = () => {
         component={SignUpOwner}
         options={{headerShown: false}}
       />
-      <Stack.Screen
-        name="ViewDetails"
-        component={ViewDetails}
-        options={{headerShown: false}}
-      />
+
       <Stack.Screen
         name="PopularKost"
         component={PopularKost}
@@ -106,6 +112,16 @@ const Routers = () => {
       <Stack.Screen
         name="ViewPenyewa"
         component={ViewPenyewa}
+        options={{headerShown: false}}
+      />
+      <Stack.Screen
+        name="AddOwner"
+        component={AddOwner}
+        options={{headerShown: false}}
+      />
+      <Stack.Screen
+        name="LanjutanEditKost"
+        component={LanjutanEditKost}
         options={{headerShown: false}}
       />
     </Stack.Navigator>
