@@ -2,17 +2,17 @@ import {StyleSheet, Text, View} from 'react-native';
 import React from 'react';
 import {
   ContentViewPenyewa,
-  Footer,
   Gap,
   HeaderAddOwner,
   HeaderOwner,
+  Footer,
 } from '../../components';
 
-const ViewPenyewa = () => {
+const ViewPenyewa = ({navigation}) => {
   return (
     <View>
       {/* Header */}
-      <HeaderOwner />
+      <HeaderOwner onPress={() => navigation.navigate('HomeOwner')} />
       {/* Title */}
       <View style={styles.label}>
         <Text style={styles.txtLabel}>Tenant at</Text>
@@ -20,13 +20,13 @@ const ViewPenyewa = () => {
       </View>
 
       <Gap height={17} />
-
       {/* Content */}
-      <ContentViewPenyewa />
+      <ContentViewPenyewa
+        onPress={() => navigation.navigate('LanjutanViewPenyewa')}
+      />
 
-      <Gap height={35} />
       {/* Footer */}
-      <Footer />
+      {/* <Footer /> */}
     </View>
   );
 };

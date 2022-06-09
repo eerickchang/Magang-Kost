@@ -8,7 +8,7 @@ import {
   WomanProfile,
 } from '../../assets';
 
-const ContentViewPenyewa = () => {
+const ContentViewPenyewa = ({onPress}) => {
   return (
     <View>
       <View style={styles.contentWrapper}>
@@ -46,7 +46,7 @@ const ContentViewPenyewa = () => {
                 </Text>
               </View>
             </View>
-            <TouchableOpacity style={styles.buttonView}>
+            <TouchableOpacity style={styles.buttonView} onPress={onPress}>
               <Text
                 style={{color: '#000000', fontSize: 10, fontWeight: 'bold'}}>
                 View &gt;
@@ -88,7 +88,7 @@ const ContentViewPenyewa = () => {
                 </Text>
               </View>
             </View>
-            <TouchableOpacity style={styles.buttonView}>
+            <TouchableOpacity style={styles.buttonView} onPress={onPress}>
               <Text
                 style={{color: '#000000', fontSize: 10, fontWeight: 'bold'}}>
                 View &gt;

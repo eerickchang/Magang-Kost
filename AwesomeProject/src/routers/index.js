@@ -1,6 +1,10 @@
 import * as React from 'react';
 import {createNativeStackNavigator} from '@react-navigation/native-stack';
 import {
+  BottomTabBar,
+  createBottomTabNavigator,
+} from '@react-navigation/bottom-tabs';
+import {
   SelectUser,
   LoginOwner,
   SplashScreen,
@@ -16,11 +20,14 @@ import {
   ViewBookedOwner,
   ViewDetails,
   ProfilOwner,
+  ProfileUser,
+  PopularKost,
   EditKost,
 } from '../pages';
-import {HomeNav, UserNav} from '../assets';
+import {Home, HomeNav, UserNav} from '../assets';
 
 const Stack = createNativeStackNavigator();
+const Tab = createBottomTabNavigator();
 
 const Routers = () => {
   return (
@@ -31,18 +38,8 @@ const Routers = () => {
         options={{headerShown: false}}
       />
       <Stack.Screen
-        name="ProfilOwner"
-        component={ProfilOwner}
-        options={{headerShown: false}}
-      />
-      <Stack.Screen
-        name="HomePenyewa"
-        component={HomePenyewa}
-        options={{headerShown: false}}
-      />
-      <Stack.Screen
-        name="ViewBookedOwner"
-        component={ViewBookedOwner}
+        name="SelectUser"
+        component={SelectUser}
         options={{headerShown: false}}
       />
       <Stack.Screen
@@ -51,8 +48,23 @@ const Routers = () => {
         options={{headerShown: false}}
       />
       <Stack.Screen
-        name="SelectUser"
-        component={SelectUser}
+        name="ProfilOwner"
+        component={ProfilOwner}
+        options={{headerShown: false}}
+      />
+      <Stack.Screen
+        name="HomePenyewa"
+        component={TabFooterUser}
+        options={{headerShown: false}}
+      />
+      <Stack.Screen
+        name="HomeOwner"
+        component={HomeOwner}
+        options={{headerShown: false}}
+      />
+      <Stack.Screen
+        name="ViewBookedOwner"
+        component={ViewBookedOwner}
         options={{headerShown: false}}
       />
       <Stack.Screen
@@ -65,7 +77,11 @@ const Routers = () => {
         component={LoginOwner}
         options={{headerShown: false}}
       />
-
+      <Stack.Screen
+        name="TabFooterO"
+        component={TabFooterO}
+        options={{headerShown: false}}
+      />
       <Stack.Screen
         name="SignUp"
         component={SignUp}
@@ -77,18 +93,13 @@ const Routers = () => {
         options={{headerShown: false}}
       />
       <Stack.Screen
-        name="LanjutanEditKost"
-        component={LanjutanEditKost}
-        options={{headerShown: false}}
-      />
-      <Stack.Screen
-        name="HomeOwner"
-        component={HomeOwner}
-        options={{headerShown: false}}
-      />
-      <Stack.Screen
         name="ViewDetails"
         component={ViewDetails}
+        options={{headerShown: false}}
+      />
+      <Stack.Screen
+        name="PopularKost"
+        component={PopularKost}
         options={{headerShown: false}}
       />
       <Stack.Screen
@@ -101,8 +112,54 @@ const Routers = () => {
         component={ViewPenyewa}
         options={{headerShown: false}}
       />
+      <Stack.Screen
+        name="AddOwner"
+        component={AddOwner}
+        options={{headerShown: false}}
+      />
+      <Stack.Screen
+        name="LanjutanEditKost"
+        component={LanjutanEditKost}
+        options={{headerShown: false}}
+      />
     </Stack.Navigator>
   );
 };
 
 export default Routers;
+
+export function TabFooterUser() {
+  return (
+    <Tab.Navigator
+      screenOptions={{headerShown: false, tabBarLabel: () => false}}>
+      <Tab.Screen
+        name="HomePenyewa"
+        component={HomePenyewa}
+        options={{tabBarIcon: () => <HomeNav />}}
+      />
+      <Tab.Screen
+        name="ProfileUser"
+        component={ProfileUser}
+        options={{tabBarIcon: () => <UserNav />}}
+      />
+    </Tab.Navigator>
+  );
+}
+
+export function TabFooterO() {
+  return (
+    <Tab.Navigator
+      screenOptions={{headerShown: false, tabBarLabel: () => false}}>
+      <Tab.Screen
+        name="HomeOwner"
+        component={HomeOwner}
+        options={{tabBarIcon: () => <HomeNav />}}
+      />
+      <Tab.Screen
+        name="ProfilOwner"
+        component={ProfilOwner}
+        options={{tabBarIcon: () => <UserNav />}}
+      />
+    </Tab.Navigator>
+  );
+}
