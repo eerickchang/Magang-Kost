@@ -14,12 +14,12 @@ import {
 } from '../../assets';
 import {ListKost} from '../../components';
 
-const EditKost = () => {
+const EditKost = ({navigation}) => {
   return (
     <View style={{flex: 1}}>
       <ScrollView showsVerticalScrollIndicator={false}>
         <View style={styles.header}>
-          <TouchableOpacity>
+          <TouchableOpacity onPress={() => navigation.navigate('ProfilOwner')}>
             <IconBackLeft />
           </TouchableOpacity>
           <View style={styles.userIcon}>
@@ -30,7 +30,7 @@ const EditKost = () => {
           <Text style={styles.txtEditKost}>My Kost</Text>
         </View>
         <View style={styles.editKost}>
-          <ListKost />
+          <ListKost onPress={() => navigation.navigate('LanjutanEditKost')}/>
         </View>
       </ScrollView>
       <View style={styles.navigation}>

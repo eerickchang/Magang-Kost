@@ -1,13 +1,13 @@
 import { StyleSheet, Text, View, TouchableOpacity } from 'react-native'
 import React from 'react'
 
-const ButtonEditDelete = ({color, btnName}) => {
+const ButtonEditDelete = ({color, btnName,},) => {
   return (
     <>
       <View style={styles.viewButton}>
-        <TouchableOpacity style={styles.buttonEdit}>
+        <View style={styles.buttonEdit} navigation>
           <Text style={styles.txtButtonEdit(color)}>{btnName}</Text>
-        </TouchableOpacity>
+        </View>
       </View>
     </>
   );

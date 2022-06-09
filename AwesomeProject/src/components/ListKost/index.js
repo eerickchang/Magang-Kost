@@ -2,7 +2,7 @@ import {StyleSheet, Text, View, Image, TouchableOpacity} from 'react-native';
 import React, {useState} from 'react';
 import ButtonEditDelete from '../ButtonEditDelete';
 
-const ListKost = () => {
+const ListKost = ({onPress}) => {
   const [dataKost, setDataKost] = useState([
     {
       image: require('../../assets/pictures/g1.jpg'),
@@ -58,7 +58,9 @@ const ListKost = () => {
               <Text style={styles.txtPrice}>{item.price}</Text>
             </View>
             <View style={styles.viewButton}>
-              <ButtonEditDelete btnName={'Edit'} color={'white'} />
+              <TouchableOpacity onPress={onPress}> 
+                <ButtonEditDelete btnName={'Edit'} color={'white'} />
+              </TouchableOpacity>
               <View style={styles.button}>
                 <ButtonEditDelete btnName={'Delete'} color={'red'} />
               </View>

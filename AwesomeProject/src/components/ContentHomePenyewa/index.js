@@ -9,8 +9,9 @@ import React from 'react';
 import {ImageHome1, ImageHome2, ImageHome3} from '../../assets';
 import Gap from '../Gap';
 import ContentImageKost from '../ContentImageKost';
+import {NavigationContainer} from '@react-navigation/native';
 
-const ContentHomePenyewa = ({suggest}) => {
+const ContentHomePenyewa = ({suggest, view}) => {
   return (
     <View style={styles.container}>
       <Text style={styles.txt}>{suggest}</Text>
@@ -18,7 +19,11 @@ const ContentHomePenyewa = ({suggest}) => {
       <View style={styles.content}>
         <View style={{flexDirection: 'row'}}>
           <ScrollView style={{height: 300}} horizontal>
-            <ContentImageKost image={<ImageHome1 />} kost={'Kost Princeton'} />
+            <ContentImageKost
+              image={<ImageHome1 />}
+              kost={'Kost Princeton'}
+              // onPressKostPopular={() => navigation.navigate('ViewDetails')}
+            />
             <Gap width={15} />
             <ContentImageKost image={<ImageHome2 />} kost={'Kost Tantaton'} />
             <Gap width={15} />
@@ -32,7 +37,7 @@ const ContentHomePenyewa = ({suggest}) => {
           </ScrollView>
         </View>
       </View>
-      <TouchableOpacity activeOpacity={0.8} style={styles.btn}>
+      <TouchableOpacity onPress={view} activeOpacity={0.8} style={styles.btn}>
         <Text style={styles.txtBtn}>View</Text>
       </TouchableOpacity>
     </View>

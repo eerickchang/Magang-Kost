@@ -35,7 +35,7 @@ const ViewDetails = ({navigation}) => {
     <View style={{backgroundColor: 'white'}}>
       <ScrollView showsVerticalScrollIndicator={false}>
         <View style={styles.container}>
-          <TouchableOpacity activeOpacity={0.6} onPress={() => navigation.navigate('HomePenyewa') }>
+          <TouchableOpacity activeOpacity={0.6} onPress={() => navigation.navigate('PopularKost') }>
             <IconBackLeft />
           </TouchableOpacity>
         </View>

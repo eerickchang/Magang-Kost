@@ -2,12 +2,12 @@ import {StyleSheet, Text, View, TouchableOpacity} from 'react-native';
 import React from 'react';
 import {IconBackLeft, MatahariKuning, User, Gap} from '../../../src';
 
-const HeaderOwner = () => {
+const HeaderOwner = ({onPress}) => {
   return (
     <View>
       <MatahariKuning />
       <View style={styles.container}>
-        <TouchableOpacity activeOpacity={0.7}>
+        <TouchableOpacity activeOpacity={0.7} onPress={onPress}>
           <IconBackLeft />
         </TouchableOpacity>
         <Gap width={238} />
