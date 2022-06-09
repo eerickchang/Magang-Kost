@@ -9,20 +9,28 @@ import React from 'react';
 import {ImageHome1, ImageHome2, ImageHome3} from '../../assets';
 import Gap from '../Gap';
 import ContentImageKost from '../ContentImageKost';
-import {NavigationContainer} from '@react-navigation/native';
+import {NavigationContainer, useNavigation} from '@react-navigation/native';
 
 const ContentHomePenyewa = ({suggest, view}) => {
+  const navigation = useNavigation();
   return (
     <View style={styles.container}>
       <Text style={styles.txt}>{suggest}</Text>
       <Gap height={6} />
       <View style={styles.content}>
         <View style={{flexDirection: 'row'}}>
-          <ScrollView style={{height: 300}} horizontal>
+          <ScrollView
+            // style={{height: 300, width: 100}}
+            horizontal
+            showsHorizontalScrollIndicator={false}>
             <ContentImageKost
+              onPress={() => navigation.navigate('ViewDetails')}
+            />
+            {/* <Gap width={155} /> */}
+            {/* <ContentImageKost
               image={<ImageHome1 />}
               kost={'Kost Princeton'}
-              // onPressKostPopular={() => navigation.navigate('ViewDetails')}
+              onPress={() => navigation.navigate('ViewDetails')}
             />
             <Gap width={15} />
             <ContentImageKost image={<ImageHome2 />} kost={'Kost Tantaton'} />
@@ -33,7 +41,7 @@ const ContentHomePenyewa = ({suggest, view}) => {
             <Gap width={15} />
             <ContentImageKost image={<ImageHome2 />} kost={'Kost Mambu'} />
             <Gap width={15} />
-            <ContentImageKost image={<ImageHome3 />} kost={'Kost Berlian'} />
+            <ContentImageKost image={<ImageHome3 />} kost={'Kost Berlian'} /> */}
           </ScrollView>
         </View>
       </View>
