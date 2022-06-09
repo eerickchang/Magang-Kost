@@ -21,7 +21,7 @@ const PopularKost = ({navigation}) => {
     suggest={'ContentKostPopular'}
     onPressDetailPrinceton={() => navigation.navigate('ViewDetails')}/>
 
-    <ContenKostPopular 
+    {/* <ContenKostPopular 
     suggest={'ContentKostPopular'}
     onPressDetailPrinceton={() => navigation.navigate('ViewDetails')}/>
 
@@ -31,7 +31,7 @@ const PopularKost = ({navigation}) => {
 
     <ContenKostPopular 
     suggest={'ContentKostPopular'}
-    onPressDetailPrinceton={() => navigation.navigate('ViewDetails')}/>
+    onPressDetailPrinceton={() => navigation.navigate('ViewDetails')}/> */}
     </ScrollView>
     {/* end of content */}
 
