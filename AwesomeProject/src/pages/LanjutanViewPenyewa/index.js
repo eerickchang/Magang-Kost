@@ -36,45 +36,7 @@ const LanjutanViewPenyewa = ({navigation}) => {
       <Gap height={10} />
       <ScrollView style={styles.content} showsVerticalScrollIndicator={false}>
         <Gap height={14} />
-        <TenantsProfile
-          name={'Andre Waani'}
-          price="$42/Mo"
-          location="Bitung"
-          job={'UI Designer'}
-          icons={<Tenants1 />}
-        />
-        <Gap height={28} />
-        <TenantsProfile
-          name={'Rolando Suak'}
-          price="$67/Mo"
-          location="Mitra"
-          job={'Senior Developer'}
-          icons={<Tenants2 />}
-        />
-        <Gap height={28} />
-        <TenantsProfile
-          name={'Salomo Mandagi'}
-          price="$34/Mo"
-          location="Minut"
-          job={'Services'}
-          icons={<Tenants3 />}
-        />
-        <Gap height={28} />
-        <TenantsProfile
-          name={'Abelard Pangalila'}
-          price="$57/Mo"
-          location="Mitra"
-          job={'Programmer'}
-          icons={<Tenants4 />}
-        />
-        <Gap height={28} />
-        <TenantsProfile
-          name={'George Olaf'}
-          price="$89/Mo"
-          location="Bitung"
-          job={'UI Designer'}
-          icons={<Tenants5 />}
-        />
+        <TenantsProfile />
       </ScrollView>
       <View style={{height: 120, backgroundColor: '#fff'}} />
     </View>
