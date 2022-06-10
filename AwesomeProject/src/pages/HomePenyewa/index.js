@@ -16,7 +16,7 @@ const HomePenyewa = ({navigation}) => {
   return (
     <View>
       <SearchHomePenyewa />
-      <ScrollView style={{height: 500}}>
+      <ScrollView style={{height: 402}}>
         <ContentHomePenyewa
           suggest={'Kost Popular'}
           onPressDetailPrinceton={() => navigation.navigate('PopularKost')}
@@ -171,7 +171,7 @@ const HomePenyewa = ({navigation}) => {
           </TouchableOpacity>
         </View>
       </ScrollView>
-      <Footer />
+      {/* <Footer /> */}
     </View>
   );
 };

@@ -17,7 +17,7 @@ const ContenKostPopular = ({
       <Gap height={6} />
       <View style={styles.content}>
 
-        <View style={{flexDirection: 'row'}}>
+        <View style={{flexDirection: 'row', backgroundColor: 'pink', width: 10}}>
             <ContentImgPopular
               image={<Popular2 />}
               kost={'Kost Princeton \nJl.Arnold Kanaan Aermadidi\nRp.2.000.000/Month'}
@@ -25,6 +25,7 @@ const ContenKostPopular = ({
             />
             <Gap width={15} />
             <ContentImgPopular image={<Popular1 />} kost={'Kost Princeton \nJl.Arnold Kanaan Aermadidi\nRp.2.000.000/Month'} />
+            
 
             
         </View>

@@ -20,15 +20,12 @@ const PopularKost = ({navigation}) => {
     <ContenKostPopular 
     suggest={'ContentKostPopular'}
     onPressDetailPrinceton={() => navigation.navigate('ViewDetails')}/>
-
     <ContenKostPopular 
     suggest={'ContentKostPopular'}
     onPressDetailPrinceton={() => navigation.navigate('ViewDetails')}/>
-
     <ContenKostPopular 
     suggest={'ContentKostPopular'}
     onPressDetailPrinceton={() => navigation.navigate('ViewDetails')}/>
-
     <ContenKostPopular 
     suggest={'ContentKostPopular'}
     onPressDetailPrinceton={() => navigation.navigate('ViewDetails')}/>

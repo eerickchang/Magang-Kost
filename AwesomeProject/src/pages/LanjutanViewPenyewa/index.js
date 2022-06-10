@@ -25,7 +25,7 @@ const LanjutanViewPenyewa = ({navigation}) => {
         <MatahariKuning />
         <View style={styles.headerProfile}>
           <Gap width={28} />
-          <TouchableOpacity onPress={() => navigation.navigate('HomeOwner')}>
+          <TouchableOpacity onPress={() => navigation.navigate('ViewPenyewa')}>
             <IconBackLeft />
           </TouchableOpacity>
           <Gap width={249} />
@@ -76,8 +76,7 @@ const LanjutanViewPenyewa = ({navigation}) => {
           icons={<Tenants5 />}
         />
       </ScrollView>
-      <Gap height={45} />
-      <Footer />
+      <View style={{height: 120, backgroundColor: '#fff'}} />
     </View>
   );
 };
