@@ -12,13 +12,13 @@ import ReferensiAPI from './src/pages/ReferensiAPI';
 
 const App = () => {
   return (
-    <NavigationContainer>
-      {/* Rest of your app code */}
-      <Routers />
-    </NavigationContainer>
-    // <>
-    //   <ReferensiAPI />
-    // </>
+    // <NavigationContainer>
+    //   {/* Rest of your app code */}
+    //   <Routers />
+    // </NavigationContainer>
+    <>
+      <LanjutanViewPenyewa />
+    </>
   );
 };
 

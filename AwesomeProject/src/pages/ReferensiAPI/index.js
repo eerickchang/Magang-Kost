@@ -16,13 +16,14 @@ const ReferensiAPI = () => {
   }, [users]);
 
   const handleOnPress = () => {
-    const data = {
-      email: 'changerick77@gmail.com',
-      first_name: 'erick',
-      last_name: 'chang',
-      avatar: 'https://reqres.in/img/faces/10-image.jpg',
-    };
-    axios.post('http://10.0.2.2:3004/users', data);
+    // const data = {
+    //   email: 'changerick77@gmail.com',
+    //   first_name: 'erick',
+    //   last_name: 'chang',
+    //   avatar: 'https://reqres.in/img/faces/10-image.jpg',
+    // };
+    // axios.post('http://10.0.2.2:3004/users', data);
+    console.log('oke');
   };
 
   return (

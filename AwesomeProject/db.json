@@ -1,70 +1,112 @@
 {
-  "posts": [
-    {
-      "id": 1,
-      "title": "json-server",
-      "author": "typicode"
-    }
-  ],
-  "comments": [
-    {
-      "id": 1,
-      "body": "some comment",
-      "postId": 1
-    }
-  ],
-  "profile": {
-    "name": "typicode"
+  "users": {
+    "penyewa": [
+      {
+        "id": 1,
+        "name": "Andre Waani",
+        "phone_number": "+62-813-4369-3646",
+        "photo": "https://reqres.in/img/faces/7-image.jpg"
+      },
+      {
+        "id": 2,
+        "name": "Salomo Waani",
+        "phone_number": "+62-813-4369-3646",
+        "photo": "https://reqres.in/img/faces/7-image.jpg"
+      },
+      {
+        "id": 3,
+        "name": "Andre Waani",
+        "phone_number": "+62-813-4369-3646",
+        "photo": "https://reqres.in/img/faces/7-image.jpg"
+      },
+      {
+        "id": 4,
+        "name": "Salomo Waani",
+        "phone_number": "+62-813-4369-3646",
+        "photo": "https://reqres.in/img/faces/7-image.jpg"
+      }
+    ],
+    "owner": [
+      {
+        "id": 1,
+        "name": "Abelard Pangalila",
+        "phone_number": "+62-813-4369-3646",
+        "photo": "./src/assets/pictures/P2.jpg"
+      },
+      {
+        "id": 2,
+        "name": "Mika Pnagalila",
+        "phone_number": "+62-813-4369-3646",
+        "photo": "./src/assets/pictures/P2.jpg"
+      }
+    ]
   },
-  "users": [
+  "kost": [
     {
-      "id": 7,
-      "email": "michael.lawson@reqres.in",
-      "first_name": "Michael",
-      "last_name": "Lawson",
-      "avatar": "https://reqres.in/img/faces/7-image.jpg"
+      "id": 1,
+      "kost_name": "Tantaton",
+      "price": "$42",
+      "size": "3 x 5",
+      "type": "Male",
+      "address": "Jl. Arnold Mononutu",
+      "description": "Bagus sekali",
+      "available": true,
+      "photo": "./src/assets/pictures/g1.jpg"
     },
     {
-      "id": 8,
-      "email": "lindsay.ferguson@reqres.in",
-      "first_name": "Lindsay",
-      "last_name": "Ferguson",
-      "avatar": "https://reqres.in/img/faces/8-image.jpg"
+      "id": 2,
+      "kost_name": "Oketon",
+      "price": "$67",
+      "size": "5 x 6",
+      "type": "Female",
+      "address": "Jl. Arnold Chef",
+      "description": "Bagus sekali",
+      "available": false,
+      "photo": "./src/assets/pictures/g2.jpg"
     },
     {
-      "id": 9,
-      "email": "tobias.funke@reqres.in",
-      "first_name": "Tobias",
-      "last_name": "Funke",
-      "avatar": "https://reqres.in/img/faces/9-image.jpg"
+      "id": 3,
+      "kost_name": "Princeton",
+      "price": "$62",
+      "size": "5 x 5",
+      "type": "Male",
+      "address": "Jl. Garuda",
+      "description": "Bagus sekali",
+      "available": true,
+      "photo": "./src/assets/pictures/g3.jpg"
     },
     {
-      "id": 10,
-      "email": "byron.fields@reqres.in",
-      "first_name": "Byron",
-      "last_name": "Fields",
-      "avatar": "https://reqres.in/img/faces/10-image.jpg"
+      "id": 4,
+      "kost_name": "Tonton",
+      "price": "$87",
+      "size": "4 x 4",
+      "type": "Male",
+      "address": "Jl. Lembong",
+      "description": "Bagus sekali",
+      "available": false,
+      "photo": "./src/assets/pictures/g4.jpg"
     },
     {
-      "id": 11,
-      "email": "george.edwards@reqres.in",
-      "first_name": "George",
-      "last_name": "Edwards",
-      "avatar": "https://reqres.in/img/faces/11-image.jpg"
+      "id": 5,
+      "kost_name": "Lonton",
+      "price": "$47",
+      "size": "5 x 8",
+      "type": "Male",
+      "address": "Jl. Jalan",
+      "description": "Bagus sekali",
+      "available": true,
+      "photo": "./src/assets/pictures/g5.jpg"
     },
     {
-      "id": 12,
-      "email": "rachel.howell@reqres.in",
-      "first_name": "Rachel",
-      "last_name": "Howell",
-      "avatar": "https://reqres.in/img/faces/12-image.jpg"
-    },
-    {
-      "email": "changerick77@gmail.com",
-      "first_name": "erick",
-      "last_name": "chang",
-      "avatar": "https://reqres.in/img/faces/10-image.jpg",
-      "id": 13
+      "id": 6,
+      "kost_name": "Futon",
+      "price": "$92",
+      "size": "5 x 5",
+      "type": "Male",
+      "address": "Jl. Sendiri",
+      "description": "Bagus sekali",
+      "available": true,
+      "photo": "./src/assets/pictures/g6.jpg"
     }
   ]
 }

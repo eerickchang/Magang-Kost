@@ -1,13 +1,13 @@
-import {StyleSheet, Text, View} from 'react-native';
+import {StyleSheet, Text, TextInput as TextInputRN} from 'react-native';
 import React from 'react';
 import Gap from '../Gap';
 
 const TextInput = ({title}) => {
   return (
-    <View style={styles.container}>
+    <TextInputRN style={styles.container}>
       <Text style={styles.txt}>{title} </Text>
       <Gap height={23} />
-    </View>
+    </TextInputRN>
   );
 };
 

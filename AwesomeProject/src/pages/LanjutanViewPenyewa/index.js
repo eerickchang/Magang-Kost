@@ -5,7 +5,7 @@ import {
   ScrollView,
   TouchableOpacity,
 } from 'react-native';
-import React from 'react';
+import React, {useState, useEffect} from 'react';
 import {
   IconBackLeft,
   MatahariKuning,
@@ -15,10 +15,20 @@ import {
   Tenants4,
   Tenants5,
   User,
+  UserIconSmall,
 } from '../../assets';
 import {Footer, Gap, TenantsProfile} from '../../components';
+import axios from 'axios';
 
 const LanjutanViewPenyewa = ({navigation}) => {
+  const [dataUser, setDataUser] = useState([]);
+
+  useEffect(() => {
+    axios
+      .get('http://10.0.2.2:3004/users')
+      .then(res => setDataUser(res.data.penyewa));
+  }, []);
+
   return (
     <View style={styles.container}>
       <View style={styles.headerWrapper}>
@@ -34,10 +44,19 @@ const LanjutanViewPenyewa = ({navigation}) => {
         <Text style={styles.txt}>6 Tenants Available</Text>
       </View>
       <Gap height={10} />
-      <ScrollView style={styles.content} showsVerticalScrollIndicator={false}>
-        <Gap height={14} />
-        <TenantsProfile />
-      </ScrollView>
+      {dataUser.map(item => (
+        <View
+          style={styles.content}
+          showsVerticalScrollIndicator={false}
+          key={item.id}>
+          <Gap height={14} />
+          <TenantsProfile
+            name={item.name}
+            phoneNumber={item.phone_number}
+            image={item.photo}
+          />
+        </View>
+      ))}
       <View style={{height: 120, backgroundColor: '#fff'}} />
     </View>
   );
