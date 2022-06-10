@@ -2,7 +2,12 @@ import * as React from 'react';
 import {View} from 'react-native';
 import {NavigationContainer} from '@react-navigation/native';
 import Routers from './src/routers';
-import {LanjutanViewPenyewa, ListKost, TenantsProfile} from './src';
+import {
+  LanjutanViewPenyewa,
+  ListKost,
+  PopularKost,
+  TenantsProfile,
+} from './src';
 import ReferensiAPI from './src/pages/ReferensiAPI';
 
 const App = () => {

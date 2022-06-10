@@ -1,6 +1,7 @@
 import {StyleSheet, Text, View, Image, ScrollView} from 'react-native';
 import React, {useState, useEffect} from 'react';
-import axios from 'axios';
+import axios, {Axios} from 'axios';
+import {Button} from '../../components';
 
 const ReferensiAPI = () => {
   const [users, setUsers] = useState([]);
@@ -11,15 +12,24 @@ const ReferensiAPI = () => {
     //   .then(res => res.json())
     //   .then(json => setUsers(json.data));
     //Axios
-    axios
-      .get('https://reqres.in/api/users')
-      .then(res => setUsers(res.data.data));
-  }, []);
+    axios.get('http://10.0.2.2:3004/users').then(res => setUsers(res.data));
+  }, [users]);
+
+  const handleOnPress = () => {
+    const data = {
+      email: 'changerick77@gmail.com',
+      first_name: 'erick',
+      last_name: 'chang',
+      avatar: 'https://reqres.in/img/faces/10-image.jpg',
+    };
+    axios.post('http://10.0.2.2:3004/users', data);
+  };
 
   return (
     <View style={styles.container}>
       <Text style={styles.txt}>HomeScreen</Text>
       <ScrollView showsVerticalScrollIndicator={false} style={{height: 360}}>
+        <Button onPress={handleOnPress} />
         {users.map(item => (
           <View style={styles.card} key={item.id}>
             <Text style={styles.txtName}>

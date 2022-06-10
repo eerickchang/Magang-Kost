@@ -1,17 +1,20 @@
-import {StyleSheet, Text, View} from 'react-native';
+import {StyleSheet, Text, View, TouchableOpacity} from 'react-native';
 import React from 'react';
 
 const Button = ({
-  title = 'Erick',
+  title = 'Submit',
   subTitle,
   backgroundColor = 'green',
   height,
+  onPress,
 }) => {
   return (
-    <View style={styles.container(backgroundColor, height)}>
+    <TouchableOpacity
+      style={styles.container(backgroundColor, height)}
+      onPress={onPress}>
       <Text>{title}</Text>
       <Text>{subTitle}</Text>
-    </View>
+    </TouchableOpacity>
   );
 };
 
