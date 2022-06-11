@@ -4,6 +4,7 @@ import {
   View,
   ScrollView,
   TouchableOpacity,
+  Image
 } from 'react-native';
 import React, {useState, useEffect} from 'react';
 import {
@@ -22,12 +23,17 @@ import axios from 'axios';
 
 const LanjutanViewPenyewa = ({navigation}) => {
   const [dataUser, setDataUser] = useState([]);
+  const [dataOwner, setDataOwner] = useState([]);
 
   useEffect(() => {
     axios
       .get('http://10.0.2.2:3004/users')
       .then(res => setDataUser(res.data.penyewa));
-  }, []);
+  }, [dataUser]);
+
+  useEffect(() => {
+    axios.get('http://10.0.2.2:3004/users').then(res => setDataOwner(res.data.owner));
+  }, [dataOwner])
 
   return (
     <View style={styles.container}>
@@ -39,24 +45,24 @@ const LanjutanViewPenyewa = ({navigation}) => {
             <IconBackLeft />
           </TouchableOpacity>
           <Gap width={249} />
-          <User />
+          {dataOwner.map(item => (
+            <Image key={item.id} source={{uri: `${item.photo}`}} style={{width: 30, height: 30, borderRadius: 50}}/>
+          ))}
         </View>
         <Text style={styles.txt}>6 Tenants Available</Text>
       </View>
       <Gap height={14} />
       <ScrollView showsVerticalScrollIndicator={false}>
-      {dataUser.map(item => (
-        <View
-          style={styles.content}
-          key={item.id}>
-          <TenantsProfile
-            name={item.name}
-            phoneNumber={item.phone_number}
-            image={item.photo}
-          />
-          <Gap height={28}/>
-        </View>
-      ))}
+        {dataUser.map(item => (
+          <View style={styles.content} key={item.id}>
+            <TenantsProfile
+              name={item.name}
+              phoneNumber={item.phone_number}
+              image={item.photo}
+            />
+            <Gap height={28} />
+          </View>
+        ))}
       </ScrollView>
       <View style={{height: 120, backgroundColor: '#fff'}} />
     </View>
