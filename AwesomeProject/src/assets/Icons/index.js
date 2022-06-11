@@ -58,13 +58,13 @@ import WomanProfile from './WomanProfile.svg';
 import LogoKecil from './LogoKecil.svg';
 import LogoBesar from './LogoBesar.svg';
 import SearchHome from './SearchHome.svg';
+import UserProfilOwner from './UserProfilOwner.svg';
+import Popular1 from './Popular1.svg';
+import Popular2 from './Popular2.svg';
+import AddImageBackground from './AddImageBackground.svg';
 import ImageHome1 from './ImageHome1.svg';
 import ImageHome2 from './ImageHome2.svg';
 import ImageHome3 from './ImageHome3.svg';
-import UserProfilOwner from './UserProfilOwner.svg';
-import Popular1 from './Popular1.svg'
-import Popular2 from './Popular2.svg'
-import AddImageBackground from './AddImageBackground.svg';
 
 export {
   IconBackLeft,
@@ -112,9 +112,6 @@ export {
   LogoKecil,
   LogoBesar,
   SearchHome,
-  ImageHome1,
-  ImageHome2,
-  ImageHome3,
   Available,
   Description,
   Price,
@@ -130,5 +127,7 @@ export {
   AddImageBackground,
   Popular1,
   Popular2,
-
+  ImageHome1,
+  ImageHome2,
+  ImageHome3,
 };

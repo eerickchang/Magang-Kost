@@ -15,7 +15,6 @@ import {
 import {ListKost} from '../../components';
 
 const EditKost = ({navigation}) => {
-  console.log('Hello');
   return (
     <View style={{flex: 1}}>
       <ScrollView showsVerticalScrollIndicator={false}>

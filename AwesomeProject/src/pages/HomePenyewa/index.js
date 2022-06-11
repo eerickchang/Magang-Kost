@@ -16,24 +16,12 @@ const HomePenyewa = ({navigation}) => {
   return (
     <View>
       <SearchHomePenyewa />
-      <ScrollView style={{height: 402}}>
-        <ContentHomePenyewa
-          suggest={'Kost Popular'}
-          onPressDetailPrinceton={() => navigation.navigate('PopularKost')}
-        />
-        <ContentHomePenyewa
-          suggest={'Kost Bisae'}
-          onPressDetailPrinceton={() => navigation.navigate('ViewDetails')}
-        />
-        <ContentHomePenyewa
-          suggest={'Kost Top'}
-          onPressDetailPrinceton={() => navigation.navigate('ViewDetails')}
-        />
-        <ContentHomePenyewa
-          suggest={'Kost Afordabel'}
-          onPressDetailPrinceton={() => navigation.navigate('ViewDetails')}
-        />
-        <View style={styles.container}>
+      <ScrollView style={{height: 502}} showsVerticalScrollIndicator={false}>
+        <ContentHomePenyewa suggest={'Kost Putri'} />
+        <ContentHomePenyewa suggest={'Kost laki'} />
+        <ContentHomePenyewa suggest={'Kost cew e'} />
+        <ContentHomePenyewa suggest={'Kost Putri'} />
+        {/* <View style={styles.container}>
           <Text style={styles.txt}>Kost Rekomendasi</Text>
           <Gap height={6} />
           <View style={styles.content}>
@@ -44,7 +32,7 @@ const HomePenyewa = ({navigation}) => {
                   kost={'Kost Princeton'}
                   onPressViewDetails={() => navigation.navigate('ViewDetails')}
                 />
-                <Gap width={15} />
+                <Gap width={15} /   >
                 <ContentImageKost
                   image={<ImageHome2 />}
                   kost={'Kost Tantaton'}
@@ -162,14 +150,14 @@ const HomePenyewa = ({navigation}) => {
                 <ContentImageKost
                   image={<ImageHome3 />}
                   kost={'Kost Berlian'}
-                />
+                /> 
               </ScrollView>
             </View>
           </View>
           <TouchableOpacity activeOpacity={0.8} style={styles.btn}>
             <Text style={styles.txtBtn}>View</Text>
           </TouchableOpacity>
-        </View>
+        </View>*/}
       </ScrollView>
       {/* <Footer /> */}
     </View>

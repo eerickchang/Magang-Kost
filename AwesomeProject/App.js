@@ -1,19 +1,24 @@
 import * as React from 'react';
+import {View} from 'react-native';
 import {NavigationContainer} from '@react-navigation/native';
 import Routers from './src/routers';
-import {View, Text} from 'react-native';
+import {
+  LanjutanViewPenyewa,
+  ListKost,
+  PopularKost,
+  TenantsProfile,
+} from './src';
+import ReferensiAPI from './src/pages/ReferensiAPI';
+
 const App = () => {
   return (
     // <NavigationContainer>
-    //   <Routers/>
+    //   {/* Rest of your app code */}
+    //   <Routers />
     // </NavigationContainer>
-    <View style={{paddingLeft: 40, paddingTop: 40, backgroundColor: 'pink', width: 100, flexDirection: 'row'}}>
-      <View style={{backgroundColor: 'skyblue', flexDirection: 'row', width: 100, paddingRight: 70}}>
-        <Text>Rolando</Text>
-        <Text>Andre</Text>
-        <Text style={{}}>Gerald</Text>
-      </View>
-    </View>
+    <>
+      <LanjutanViewPenyewa />
+    </>
   );
 };
 

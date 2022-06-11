@@ -1,36 +1,40 @@
 import { StyleSheet, Text, View, TouchableOpacity, ScrollView } from 'react-native'
-import React from 'react'
+import React, {useState} from 'react'
 // import { MatahariKuning, IconBack } from '../../assets'
 import {Popular1, Popular2} from '../../assets';
 import Gap from '../Gap';
 import { ContentImgPopular } from '../..';
 
-const ContenKostPopular = ({
-    suggest,
-    onPressDetailPrinceton,
-    onPressKostPopular,
-    
 
-}) => {
+const ContenKostPopular = () => {
+  const [DataKostPopular] = useState([
+    {
+      
+    },
+  ]);
   return (
+
+    <>
+    {DataKostPopular.map(item => (
+
     <View style={styles.container}>
       <Gap height={6} />
       <View style={styles.content}>
-
-        <View style={{flexDirection: 'row', backgroundColor: 'pink', width: 10}}>
-            <ContentImgPopular
-              image={<Popular2 />}
-              kost={'Kost Princeton \nJl.Arnold Kanaan Aermadidi\nRp.2.000.000/Month'}
-              onPress={onPressDetailPrinceton}
-            />
-            <Gap width={15} />
-            <ContentImgPopular image={<Popular1 />} kost={'Kost Princeton \nJl.Arnold Kanaan Aermadidi\nRp.2.000.000/Month'} />
-            
-
-            
+        <View style={{flexDirection: 'row'}}>
+            <ContentImgPopular/>
+        </View>
+        <Gap width={15} />
+    
+        
+        <View style={{flexDirection: 'row'}}>
+            <ContentImgPopular/>
         </View>
       </View>
     </View>
+  
+
+))}
+    </>
   )
 }
 

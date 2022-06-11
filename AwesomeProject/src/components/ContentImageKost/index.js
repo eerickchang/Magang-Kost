@@ -1,15 +1,58 @@
-import {StyleSheet, Text, View, TouchableOpacity} from 'react-native';
-import React from 'react';
+import {StyleSheet, Text, View, TouchableOpacity, Image} from 'react-native';
+import React, {useState} from 'react';
+import {IconBack, ImageHome1, ImageHome2, ImageHome3} from '../../assets';
+import Gap from '../Gap';
 
-const ContentImageKost = ({image, kost, onPressViewDetails}) => {
+const ContentImageKost = ({onPress}) => {
+  const [dataKost, setDataKost] = useState([
+    {
+      image: <ImageHome1 />,
+      kostName: 'PrinceTon',
+      key: 1,
+    },
+    {
+      image: <ImageHome2 />,
+      kostName: 'TantaTon',
+      key: 2,
+    },
+    {
+      image: <ImageHome3 />,
+      kostName: 'OmTon',
+      key: 3,
+    },
+    {
+      image: <ImageHome2 />,
+      kostName: 'QueenTon',
+      key: 4,
+    },
+    {
+      image: <ImageHome1 />,
+      kostName: 'PadukaceTon',
+      key: 5,
+    },
+    {
+      image: <ImageHome3 />,
+      kostName: 'PermaysuriTon',
+      key: 6,
+    },
+  ]);
   return (
-    <TouchableOpacity onPress={onPressViewDetails} activeOpacity={0.8}>
-      {image}
-      <TouchableOpacity activeOpacity={0.8} style={styles.contImage}>
-        <Text style={styles.txtTitle}>{kost}</Text>
-        <Text style={styles.txtDetails}>Details</Text>
-      </TouchableOpacity>
-    </TouchableOpacity>
+    <>
+      {dataKost.map(item => (
+        <TouchableOpacity
+          onPress={onPress}
+          activeOpacity={0.8}
+          style={{marginRight: 15}}>
+          {/* <Image source={item.image} /> */}
+          <View>{item.image}</View>
+          <TouchableOpacity activeOpacity={0.8} style={styles.contImage}>
+            <Text style={styles.txtTitle}>{item.kostName}</Text>
+            <Text style={styles.txtDetails}>Details</Text>
+          </TouchableOpacity>
+          {/* <Gap width={15} /> */}
+        </TouchableOpacity>
+      ))}
+    </>
   );
 };
 

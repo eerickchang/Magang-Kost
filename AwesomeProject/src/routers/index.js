@@ -38,12 +38,7 @@ const Routers = () => {
         options={{headerShown: false}}
       />
       <Stack.Screen
-        name='EditKost'
-        component={EditKost}
-        options={{headerShown: false}}
-      />
-      <Stack.Screen
-        name='ViewDetails'
+        name="ViewDetails"
         component={ViewDetails}
         options={{headerShown: false}}
       />
@@ -74,7 +69,7 @@ const Routers = () => {
       />
       <Stack.Screen
         name="HomeOwner"
-        component={HomeOwner}
+        component={TabFooterO}
         options={{headerShown: false}}
       />
       <Stack.Screen
@@ -107,7 +102,17 @@ const Routers = () => {
         component={SignUpOwner}
         options={{headerShown: false}}
       />
-       
+
+      {/* <Stack.Screen
+        name="PopularKost"
+        component={PopularKost}
+        options={{headerShown: false}}
+      /> */}
+      <Stack.Screen
+        name="EditKost"
+        component={EditKost}
+        options={{headerShown: false}}
+      />
       <Stack.Screen
         name="ViewPenyewa"
         component={ViewPenyewa}

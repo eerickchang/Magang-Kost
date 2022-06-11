@@ -33,7 +33,7 @@ const LoginUser = ({navigation}) => {
       <Gap height={51} />
       <TouchableOpacity
         style={styles.Button}
-        onPress={() => navigation.navigate('TabFooterO')}>
+        onPress={() => navigation.navigate('HomePenyewa')}>
         <Text style={styles.textLog}>Login</Text>
       </TouchableOpacity>
 
