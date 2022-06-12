@@ -3,6 +3,7 @@ import {View} from 'react-native';
 import {NavigationContainer} from '@react-navigation/native';
 import Routers from './src/routers';
 import {
+  EditKost,
   LanjutanViewPenyewa,
   ListKost,
   PopularKost,
@@ -17,7 +18,7 @@ const App = () => {
     //   <Routers />
     // </NavigationContainer>
     <>
-      <LanjutanViewPenyewa />
+      <EditKost />
     </>
   );
 };

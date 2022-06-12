@@ -2,72 +2,28 @@ import {StyleSheet, Text, View, Image, TouchableOpacity} from 'react-native';
 import React, {useState} from 'react';
 import ButtonEditDelete from '../ButtonEditDelete';
 
-const ListKost = ({onPress}) => {
-  const [dataKost, setDataKost] = useState([
-    {
-      image: require('../../assets/pictures/g1.jpg'),
-      kostName: 'Pricenton',
-      wifi: 'Free Wifi',
-      location: 'Jl. Salomo Ikeh',
-      price: '$42 / month',
-      key: 1,
-    },
-    {
-      image: require('../../assets/pictures/g2.jpg'),
-      kostName: 'Tantaton',
-      wifi: 'Free Wifi',
-      location: 'Jl. Ando Kimochi',
-      price: '$100 / month',
-      key: 2,
-    },
-    {
-      image: require('../../assets/pictures/g3.jpg'),
-      kostName: 'Omtono',
-      wifi: 'Free Wifi',
-      location: 'Jl. Sumandre Wik-Wik',
-      price: '$72 / month',
-      key: 3,
-    },
-    {
-      image: require('../../assets/pictures/g4.jpg'),
-      kostName: 'Mamaton',
-      wifi: 'Free Listrik',
-      location: 'Jl. Gerald Sugiono',
-      price: '$10 / month',
-      key: 4,
-    },
-    {
-      image: require('../../assets/pictures/g5.jpg'),
-      kostName: 'Papaton',
-      wifi: 'Free Air',
-      location: 'Jl. Olaf Ara-Ara',
-      price: '$80 / month',
-      key: 5,
-    },
-  ]);
+const ListKost = ({onPress, image, kostName, location, wifi='Free Wifi', price}) => {
   return (
     <>
-      {dataKost.map(item => (
-        <View style={styles.viewListKost} key={item.key}>
-          <Image source={item.image} style={styles.image} />
-          <View style={styles.viewTitle}>
-            <Text style={styles.txtTitle}>{item.kostName}</Text>
-            <Text style={styles.txtLocation}>{item.location}</Text>
-            <Text style={styles.txtWifi}>{item.wifi}</Text>
-            <View style={styles.viewTxtPrice}>
-              <Text style={styles.txtPrice}>{item.price}</Text>
-            </View>
-            <View style={styles.viewButton}>
-              <TouchableOpacity onPress={onPress}> 
-                <ButtonEditDelete btnName={'Edit'} color={'white'} />
-              </TouchableOpacity>
-              <View style={styles.button}>
-                <ButtonEditDelete btnName={'Delete'} color={'red'} />
-              </View>
+      <View style={styles.viewListKost}>
+        <Image source={{uri: `${image}`}} style={styles.image} />
+        <View style={styles.viewTitle}>
+          <Text style={styles.txtTitle}>{kostName}</Text>
+          <Text style={styles.txtLocation}>{location}</Text>
+          <Text style={styles.txtWifi}>{wifi}</Text>
+          <View style={styles.viewTxtPrice}>
+            <Text style={styles.txtPrice}>{price}</Text>
+          </View>
+          <View style={styles.viewButton}>
+            <TouchableOpacity onPress={onPress}>
+              <ButtonEditDelete btnName={'Edit'} color={'white'} />
+            </TouchableOpacity>
+            <View style={styles.button}>
+              <ButtonEditDelete btnName={'Delete'} color={'red'} />
             </View>
           </View>
         </View>
-      ))}
+      </View>
     </>
   );
 };
@@ -91,7 +47,7 @@ const styles = StyleSheet.create({
     borderBottomLeftRadius: 10,
   },
   viewTitle: {
-    marginTop:10,
+    marginTop: 10,
     marginLeft: 12,
     flex: 1,
   },
@@ -99,12 +55,12 @@ const styles = StyleSheet.create({
     color: 'black',
     fontSize: 20,
     fontFamily: 'Poppins-Bold',
-    marginBottom: -4
+    marginBottom: -4,
   },
   txtLocation: {
     fontFamily: 'Poppins-Regular',
     color: 'black',
-    fontSize: 10,   
+    fontSize: 10,
   },
   txtWifi: {
     fontFamily: 'Poppins-Regular',
@@ -119,7 +75,7 @@ const styles = StyleSheet.create({
     marginRight: 14,
     color: 'black',
     fontFamily: 'Poppins-SemiBold',
-    fontSize: 11
+    fontSize: 11,
   },
   viewButton: {
     flexDirection: 'row',
