@@ -13,13 +13,13 @@ import ReferensiAPI from './src/pages/ReferensiAPI';
 
 const App = () => {
   return (
-    // <NavigationContainer>
-    //   {/* Rest of your app code */}
-    //   <Routers />
-    // </NavigationContainer>
-    <>
-      <EditKost />
-    </>
+    <NavigationContainer>
+      {/* Rest of your app code */}
+      <Routers />
+    </NavigationContainer>
+    // <>
+    //   <EditKost />
+    // </>
   );
 };
 

@@ -14,6 +14,7 @@ import {
 } from '../../assets';
 import {ListKost} from '../../components';
 import axios from 'axios';
+import { TabFooterO } from '../../routers';
 
 const EditKost = ({navigation}) => {
   const [dataKost, setDataKost] = useState([]);
@@ -62,13 +63,15 @@ const EditKost = ({navigation}) => {
         </View>
       </ScrollView>
       <View style={styles.navigation}>
-        <TouchableOpacity>
+        {/* <TouchableOpacity>
           <HomeNavigation />
         </TouchableOpacity>
         <TouchableOpacity>
           <UserNavigation style={styles.buttonUserNavigation} />
-        </TouchableOpacity>
+        </TouchableOpacity> */}
+        <TabFooterO/>
       </View>
+      
     </View>
   );
 };
